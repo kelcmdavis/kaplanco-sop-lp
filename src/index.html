@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" style class+"no-touchevents flexbox">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans:300i,400,400i,600,700|Oswald:300,400" rel="stylesheet">
+
+  <!-- Kaplanco CSS -->
+  <link rel="stylesheet" type="text/css" href="http://images.kaplanco.com/css/kaplan91e.css" media="all">
+
+  <!-- PD CSS -->
+  <link rel="stylesheet" href="2nd-ed-styles.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://images.kaplanco.com/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://images.kaplanco.com/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://images.kaplanco.com/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://images.kaplanco.com/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://images.kaplanco.com/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://images.kaplanco.com/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://images.kaplanco.com/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://images.kaplanco.com/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://images.kaplanco.com/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://images.kaplanco.com/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://images.kaplanco.com/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://images.kaplanco.com/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://images.kaplanco.com/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://images.kaplanco.com/manifest.json">
+  <link rel="shortcut icon" href="http://images.kaplanco.com/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Kaplan">
+  <meta name="application-name" content="Kaplan Early Learning">
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://images.kaplanco.com/javascript/modernizr.js" integrity="sha384-keTkaEMDesZZXA+yThM6SS+sKTTUt3QqQzrfgG4trhzckVa57RbXJATIU9xh9I+7" crossorigin="anonymous"></script>
+
+  <title>Page Title</title>
+</head>
+
+<body id="top" class="horizontal">
+
+  <header>
+    <div id="logoBar" class="container">
+      <div class="container_content">
+        <div class="nav_menuOpen hidden-print"><a href="#" class="icon icon--blue"><span class="icon_icon icon-menu"></span><span class="icon_name">MENU</span></a><span class="vert-shim"></span></div>
+        <div class="logoBox logoBar_item"><a href="#"><img src="http://images.kaplanco.com/images/header/KaplanELC.png" alt="Kaplan Early Learning Company Logo" width="516" height="97"></a><span class="vert-shim"></span></div>
+
+        <div class="searchBox logoBar_item hidden-print">
+          <form name="frmSearchProduct" id="frmSearchProduct" method="get" action="/store/trans/search.asp" class="search_form">
+            <input type="search" name="tbSearch" id="tbSearch" placeholder="Search..." class="search_input" value="" maxlength="70" autocomplete="off" tabindex="1">
+            <div class="search_submit"><span class="search_submitIcon icon-search"></span><input class="search_submitButton" type="submit" id="submitSearch" name="submitSearch" value="" tabindex="2"></div>
+            <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 560px; z-index: 9999;"></div>
+          </form>
+        </div>
+
+        <div class="iconNav logoBar_item hidden-print">
+          <div class="iconNav_item"><a href="#" class="icon icon--green"><span class="icon_icon icon-inspire"></span>
+              <div class="icon_name">INSPIRATIONS</div>
+            </a><span class="vert-shim"></span>
+            <ul class="iconNav_menu">
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Insights &amp; Inspirations</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="iconNav_item hidden-print"><a href="#" class="icon icon--purple"><span class="icon_icon icon-contact"></span>
+              <div class="icon_name">CONTACT</div>
+            </a><span class="vert-shim"></span>
+            <ul class="iconNav_menu">
+              <li class="iconNav_menuItem"><a class="iconNav_menuLink" href="#">Find a Rep</a></li>
+              <li class="iconNav_menuItem"><a class="iconNav_menuLink liveChatLink" href="#">Chat Live</a></li>
+              <li class="iconNav_menuItem"><a class="iconNav_menuLink" href="#">Email Us</a></li>
+              <li class="iconNav_menuItem"><a class="iconNav_menuLink" href="#">1-800-334-2014</a></li>
+              <li class="iconNav_menuItem"><a class="iconNav_menuLink" href="#">Other Ways to Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="iconNav_item hidden-print"><a href="#" class="icon icon--blue"><span class="icon_icon icon-account"></span>
+              <div class="icon_name">ACCOUNT</div>
+            </a><span class="vert-shim"></span>
+            <ul class="iconNav_menu hidden-print">
+              <li class="iconNav_menuItem"><a onclick="showLogin();return false;" href="#" class="iconNav_menuLink">Log In</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Create an Account</a></li>
+              <li class="iconNav_menuItem">
+                <hr>
+              </li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Order Tracking</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Gift Cards</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Product Registration</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Contact Us</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Catalog View &amp; Request</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Returns</a></li>
+              <li class="iconNav_menuItem"><a href="#" class="iconNav_menuLink">Ratings &amp; Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="iconNav_item cartView hidden-print"><a href="#" class="icon icon--orange"><span class="icon_icon icon-cart"></span>
+              <div class="icon_name">CART</div><span id="CartQty" class="cartView_number">0</span>
+            </a><span class="vert-shim"></span>
+            <div id="cartMenuDisplay" class="iconNav_menu cartView_dropdown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav Bar -->
+
+  <div class="container nav hidden-print">
+    <div class="nav_overlay"></div>
+    <div class="container_content nav_content">
+      <div class="nav_iconNav">
+        <ul class="nav_iconNav_list">
+          <li data-openicon="insp" class="nav_iconNav_icon"><span class="vert-shim"></span>
+            <div class="icon icon--green"><span class="icon_icon icon-inspire"></span>
+              <div class="icon_name">INSPIRATIONS</div>
+            </div>
+          </li>
+          <li data-openicon="cont" class="nav_iconNav_icon"><span class="vert-shim"></span>
+            <div class="icon icon--purple"><span class="icon_icon icon-contact"></span>
+              <div class="icon_name">CONTACT</div>
+            </div>
+          </li>
+          <li data-openicon="acco" class="nav_iconNav_icon"><span class="vert-shim"></span>
+            <div class="icon icon--blue"><span class="icon_icon icon-account"></span>
+              <div class="icon_name">ACCOUNT</div>
+            </div>
+          </li>
+          <li class="nav_iconNav_icon"><span class="vert-shim"></span>
+            <div class="icon icon--red nav_menuClose"><span class="icon_icon icon-close"></span>
+              <div class="icon_name">CLOSE</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="nav_iconNav_content">
+          <ul data-icontarg="insp" class="nav_iconNav_panel">
+            <li class="nav_iconNav_link"><a href="#">Insights &amp; Inspirations</a><span class="vert-shim"></span></li>
+            <li class="nav_iconNav_link"><a href="#">Blog</a><span class="vert-shim"></span></li>
+          </ul>
+
+          <ul data-icontarg="cont" class="nav_iconNav_panel">
+            <li>
+              <ul class="nav_iconNav_col">
+                <li class="nav_iconNav_link"><a href="#">Find a Rep</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#" class="liveChatLink">Chat Live</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Email Us</a><span class="vert-shim"></span></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="nav_iconNav_col">
+                <li class="nav_iconNav_link"><a href="#">1-800-334-2014</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Other Ways to Contact</a><span class="vert-shim"></span></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul data-icontarg="acco" class="nav_iconNav_panel">
+            <li>
+              <ul class="nav_iconNav_col">
+                <li class="nav_iconNav_link"><a href="#">Log In</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Create an Account</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Order Tracking</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Gift Cards</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Product Registration</a><span class="vert-shim"></span></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="nav_iconNav_col">
+                <li class="nav_iconNav_link"><a href="#">Contact Us</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Catalog View &amp; Request</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Returns</a><span class="vert-shim"></span></li>
+                <li class="nav_iconNav_link"><a href="#">Ratings &amp; Reviews</a><span class="vert-shim"></span></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="nav_menuList" id="shopBar">
+        <li class="nav_menuItem nav_menuItem--shop nav_menuItem--lightBlue"><a data-showmenupanel="shop" class="nav_menuName" href="#">SHOP</a>
+          <ul id="shop" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">SHOP</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--furniture"><a href="#" data-showmenupanel="furn" class="nav_menuName">FURNITURE</a>
+          <ul id="furn" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">FURNITURE</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--play"><a data-showmenupanel="play" href="#" class="nav_menuName">PLAY</a>
+          <ul id="play" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">PLAY</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--art"><a data-showmenupanel="art" href="#" class="nav_menuName">ART</a>
+          <ul id="art" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">ART</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--technology"><a data-showmenupanel="tech" href="#" class="nav_menuName">TECHNOLOGY</a>
+          <ul id="tech" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">TECHNOLOGY</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--infantToddler nav_menuItem--blueMedium"><a data-showmenupanel="infa" href="#" class="nav_menuName">INFANT &amp; TODDLER</a>
+          <ul id="infa" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">INFANT &amp; TODDLER</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--preschool nav_menuItem--blueMedium"><a data-showmenupanel="pres" href="#" class="nav_menuName">PRESCHOOL</a>
+          <ul id="pres" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">PRESCHOOL</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--elementary nav_menuItem--blueMedium"><a data-showmenupanel="elem" href="#" class="nav_menuName">ELEMENTARY</a>
+          <ul id="elem" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">ELEMENTARY</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav_menuItem nav_menuItem--resources nav_menuItem--blueDark"><a data-showmenupanel="reso" href="#" class="nav_menuName">RESOURCES</a>
+          <ul id="reso" class="nav_menuPanel">
+            <li class="nav_mobileMenuPanelInfo">
+              <div class="nav_menuPanelName">RESOURCES</div>
+              <div class="nav_closePanel"><span class="icon-arrow-right"></span></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="container infoBar">
+    <div class="container_content infoBar_content">
+      <div class="breadCrumbs">
+        <ul class="breadCrumbs_list">
+          <li class="breadCrumbs_link">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadCrumbs_divider"><span class="icon-arrow-right"></span></li>
+          <li class="breadCrumbs_here">Page Title</li>
+        </ul>
+      </div>
+      <span class="vert-shim"></span>
+    </div>
+  </div>
+  <!-- /Breadcrumb -->
+
+  <!-- Page content -->
+
+  <!-- Footer -->
+  <div class="container footer hidden-print">
+    <div class="container_content footer_content">
+      <div class="footer_col footer_col--1">
+        <div class="footer_title">QUICK LINKS</div>
+        <ul class="footer_list">
+          <li class="footer_listCol">
+            <ul>
+              <li class="footer_link"><a href="#">Catalog Request</a></li>
+              <li class="footer_link"><a href="#">Classroom Lists</a></li>
+              <li class="footer_link"><a href="#">GSA Customers</a></li>
+              <li class="footer_link"><a href="#">Financing</a></li>
+              <li class="footer_link"><a href="#">Credit Application</a></li>
+              <li class="footer_link"><a href="#">MyKaplan</a></li>
+            </ul>
+          </li>
+          <li class="footer_listCol">
+            <ul>
+              <li class="footer_link"><a href="#">Order Tracking</a></li>
+              <li class="footer_link"><a href="#">Quick Order</a></li>
+              <li class="footer_link"><a href="#">Returns</a></li>
+              <li class="footer_link"><a href="#">Online Payments</a></li>
+              <li class="footer_link"><a href="#">Popular Searches</a></li>
+              <li class="footer_link"><a href="#">Exclusions</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_col footer_col--2">
+        <div class="footer_title">ABOUT KAPLAN</div>
+        <ul class="footer_list">
+          <li class="footer_listCol">
+            <ul>
+              <li class="footer_link"><a href="#">About Us</a></li>
+              <li class="footer_link"><a href="#">Contact Us</a></li>
+              <li class="footer_link"><a href="#">Megastore</a></li>
+              <li class="footer_link"><a href="#">Careers</a></li>
+              <li class="footer_link"><a href="#">Partners</a></li>
+            </ul>
+          </li>
+          <li class="footer_listCol">
+            <ul>
+              <li class="footer_link"><a href="#">Shipping Policies</a></li>
+              <li class="footer_link"><a href="#">Product Safety</a></li>
+              <li class="footer_link"><a href="#">Meet Our Reps</a></li>
+              <li class="footer_link"><a href="#">Privacy &amp; Security</a></li>
+              <li class="footer_link"><a href="#">Terms of Payment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_col footer_col--3">
+        <div class="footer_title">FOLLOW US</div>
+        <ul class="footer_list">
+          <li>
+            <p class="footer_text">Get Special Savings, Event Announcements and the Latest Information.</p>
+            <div class="email">
+              <form id="frmEmailSignUp" name="frmEmailSignUp" action="/email/index.asp" method="post" class="email_form">
+                <input id="tbEmailSignUp" name="tbEmailSignUp" class="email_input" maxlength="70" type="email" placeholder="email..." tabindex="4000" title="Join our Email List" autocomplete="off">
+                <div class="email_submit"><span class="email_submitIcon icon-arrow-right"></span><input class="email_submitButton" type="submit" name="submitEmailSignUp" id="submitEmailSignUp" value="" tabindex="4001"></div>
+              </form>
+            </div>
+            <div class="footer_social"><a href="#" class="footer_socialIcon" target="_blank"><span class="icon-facebook"></span><span class="sr-only">Follow Us on FaceBook</span></a> <a href="#" class="footer_socialIcon" target="_blank"><span class="icon-pinterest"></span><span
+                  class="sr-only">Follow Us on Pinterest</span></a> <a href="#" class="footer_socialIcon" target="_blank"><span class="icon-twitter"></span><span class="sr-only">Follow Us on Twitter</span></a> <a href="#" class="footer_socialIcon"
+                target="_blank"><span class="icon-linkedin"></span><span class="sr-only">Follow Us on
+                  Linked-In</span></a> <a href="#" class="footer_socialIcon" target="_blank"><span class="icon-youtube"></span><span class="sr-only">Follow Us on YouTube</span></a> <a href="#" class="footer_socialIcon" target="_blank"><span class="icon-instagram"></span><span
+                  class="sr-only">Follow us on Instagram</span></a> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container contactBar">
+    <div class="container_content"><span class="contactBar_item"><a href="#">EMAIL</a></span> <span class="contactBar_item"><a class="liveChatLink">LIVE CHAT</a></span> <span class="contactBar_item"><a href="#">1
+          • 800 • 334 • 2014</a></span></div>
+  </div>
+
+  <div class="container copyrightBar">
+    <div class="container_content copyrightBar_content"><span class="copyrightBar_item copyrightBar_item--copyright">Copyright © 2019 Kaplan Early Learning Company. All rights reserved.</span><span class="copyrightBar_item copyrightBar_item--siteMap"><a
+          href="#">Site Map</a></span></div>
+  </div>
+  <!-- /Footer -->
+
+  <!-- JavaScript -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var sChatQueue = '2',
+      scriptName = 'javascript85d.js';
+    var google_conversion_id = 1069176872,
+      google_remarketing_only = true,
+      google_custom_params = {
+        ecomm_pagetype: 'other',
+        ecomm_pcat: '',
+        ecomm_prodid: '',
+        ecomm_pname: '',
+        ecomm_totalvalue: 0.00
+      };
+    var fbID = '1699840483596292',
+      fbP = '',
+      fbV = ''; /* ]]> */
+  </script>
+  <script type="text/javascript" src="https://images.kaplanco.com/javascript/javascript85d.js?accountId=1&amp;siteId=1&amp;queueId=2&amp;m=1&amp;i=1&amp;theme=link&amp;popout=true" integrity="sha384-ebTEIwramehoL5m2nnD+bSY3IGOX7h0g3pmj/dDI9T3qASiOpuvBhawJViWzMG6C"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var bStopSubmit = true;
+
+    function PDRequestForm(sPDType, sTitle) {
+      ModalBoxOpen('/eMail/KapAjax.asp?rpt=PD&pdType=' + sPDType, {
+        title: sTitle
+      });
+      return false;
+    }
+
+    function PDRequestPostBack(sPDType, sParam) {
+      ModalBoxUpdate('/eMail/KapAjax.asp?rpt=PD&pdType=' + sPDType, sParam);
+      return false;
+    }
+    $(function() {
+      $(".accordion").accordion({
+        heightStyle: "content",
+        collapsible: true
+      });
+      $("img.lateLoad").lazyload();
+    });
+    /* ]]> */
+  </script>
+
+</body>
+
+</html>
