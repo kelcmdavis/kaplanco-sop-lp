@@ -1,0 +1,35 @@
+<svg version="1" id="Curio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 627 672">
+	<defs>
+		<style>
+      svg {
+        background-image: url(images/sop-curio.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        max-width: 627px;
+        width: 90%;
+        border: 15px solid #FFFFFF;
+        border-radius: 25px;
+      }
+      path {
+        fill: transparent;
+        cursor: pointer;
+        transition: fill 0.2s;
+      }
+      svg a:focus,
+      svg a:hover {
+        outline: none;
+      }
+      svg a:focus path,
+      svg a:hover path {
+        fill: rgba(216, 209, 94, 0.5);
+        cursor: pointer;
+      }
+    </style>
+  </defs>
+	<g>
+		<a href="https://www.kaplanco.com/product/31673/sense-of-place-curio-storage">
+			<title>Curio Storage</title>
+		  <path d="M555 122c0-2 0-3-2-3l-22-7-5-1-345 7h-1s-3 2-3 5 4 4 5 4h2l1 420 2 3c1 1 2 3 4 3l6-3 1 42 1 2h15s6-7 8-12l2-7 275 7v5l8 17h15l3-3 1-19h15l3-3v-33l9-9 1-4-2-125-2-4v-2-1l-1 1v13l1 10-1 2-4-3-1-6v-11l-3 7-1 1-2 4-3 3-1-10 5-4 2-3-1-2-2-1h-4v-50l2-2 3-1h4l1 1 3-1 2-1v-7l-9-4-2-1-4-2v-3a259 259 0 0 0 15 8l-1-11-2-3-2-4-2-3-4-3-4-3v-2h2c0 1 1 2 3 2l1-5-1-2-2 2-1 1h-2v-3l1-1-1-2v-4h1l-1-1v-63l1 1 1 2h7l2 2 3 2 2 1 2 1v-1l-1-2h1l-1-115 3-1 1-2zM196 244v-73c0-5 1-8 3-8l16 1c3 0 3 3 3 7l1 54v2l1 2v15h-24zm1 32h23l1 108-23 7-1-115zm22 228l-19 9-2-89h23l1 69c0 6-2 10-3 11z" />
+		</a>
+	</g>
+</svg>

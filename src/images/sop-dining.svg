@@ -1,0 +1,53 @@
+<svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 532">
+	<defs>
+		<style>
+      svg {
+        background-image: url(images/sop-dining.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        max-width: 890px;
+        width: 90%;
+        border: 15px solid #FFFFFF;
+        border-radius: 25px;
+      }
+      path {
+        fill: transparent;
+        cursor: pointer;
+        transition: fill 0.2s;
+      }
+      svg a:focus,
+      svg a:hover {
+        outline: none;
+      }
+      svg a:focus path,
+      svg a:hover path {
+        fill: rgba(216, 209, 94, 0.5);
+        cursor: pointer;
+      }
+    </style>
+  </defs>
+  <g>
+		<a href="https://www.kaplanco.com/product/33066P/sense-of-place-farmhouse-table-and-benches">
+			<title>Farmhouse Table</title>
+	    <path d="M720 210l-130-4s3 1 0 2h-2v3l-4 1-20 1h-19l-6-1v-2s-5-1-5-3 15-2 15-2v-1l-74-3-68 10c-2 0-3 2-3 2l1 3h4l1 45-12 2-3 2 2 2 1 54 1 1h5l3-2 3-19v8h9l3-16h1l1 21h6l3-1 2-29 38 3 1 5h9v-4h15l1 2 5 1h3v-1l92 6 6 45h5l3-1 2-45h4l8 37h8v-57h1v-3a30384 30384 0 0 0-105-8v-5l120 7 1 38 4 28 2 1h6l2-2 1-30 17-6 1 11 1 1h5l2-1 1-14 8-3 2 11h2l3 12h6l3-1-2-95h4c1-1 2-1 2-3l-2-3zm-248 50l-48-3v-27l49 3-1 27zm40 3l1-6h6v6h-7zm8-27l-21 4-1 2 2 2v18l-15-1v-28l35 2v1zm147 51l1-20h12l2 16-15 4zm27-9v-11l4-1 2 11-6 1z" />
+		</a>
+  </g>
+  <g>
+		<a href="https://www.kaplanco.com/product/31672/sense-of-place-30-inch-compartment-storage?c=0%7CSO1000">
+			<title>30" Compartment Storage<title>
+	    <path d="M407 211l16-2v-53c0-1-2-2-5-2h-34l-1 1v3h-12l-1-3-1-1h-2v3l-1 1-1 2h-32l-1-1v-2l-2 1v4h-17l-2-1v-1l-16 1-1 1-1 1-1 1v3l-2 1-4 2 1 1 1 1 4-1 1-1h2l3-1 2 1h2l1 1v1l-2 1h-3l-3 1-2 1-2 1-1 1h-1l-1 1-1 1-1 1h-1l-1 1v1s-2 1-1 2l2 1 2 3 1 1s1 1-1 1h-1v1l1 1 1 1h2l2 1v4l-1 1-2-1-1-1v-1h-1l-1 1 1 2 2 1 1 1v1l2 1 3 3 2 1 1 2 1 2 1 1 1 1h1l1 1 1 1 1 1h-2l-1-1-2-1-1-1-1-1-2-3-1-1-1-1-3-2h-2-1l1 3 1 2 1 2v7l-1 3v4c-1 0-2 0-2-2l-1-4-1-3v-2-2-2l-1-3-1-1h-1v2l1 1v18l1 1v4h4l1 1v3l50 3v-2l4-2 5 1-1 38 48-10 1-2 13-2-1-45h-4l-1-3 3-2zm-127 19v-2-2-1l-1-1v-2l-1-1v-2l-1-1-1-2v5l1 1v6c0 1 0 0 0 0l1 3v1l-1 2v15l-1 1 1 1v2h1l2-17 1-1v-1-1-2l-1-1zm-8 16l-2-2v-2-2l-1-1-1-1v-1l-1-1 1-1v-1-1-1l1-2v-2c0-1 0 0 0 0v-4-3h-1l-4 11v21h10l-1-5-1-2zm6-78l-1-2-1-1-2-3h-2l-1 1 2 1 2 2 4 3-1-1zm8-3l1-1 1-1h3l1-1h-15l3 5c1 0 0 2 1 1l2-2 3-1zm304 18zm120-31c0-1 0-2-2-2h-5l-133-1-1 2h-18l-1-1v-2l-24 2c-2 0-2 1-2 4l1 49 24 1-2-8v-2h-1l-1-2c0 1 0 1 0 0v-2-1l-1-1v-1h-1l-1-1v-1h1l1 1v-1-1l-1-1-1-1h-3l-1 1h-6l-1 1h-1v-2h1l1-1h1v-1l1-1h5l1-1h1v-3l-1-1-1-1v-2s1 0 0 0l-1-1 1-1h-1c-1 0 0 0 0 0h-2l-1 1-1-1 1-1 1-1h1v-1l-1-1v-1h3s1 0 0 0l-1-1v-2l1 1h1l1 1h1v1l1 1v1h1v1l1 1h1v1l1 2h1v1h1l1-1v-1-3l-1-1v-1l-2-2-1-2v-1h-1v-1h-1v-1s-1 0 0 0l1-1 1 1v1l1 1 1 1 1 1c1 1 0-1 0 0l1 1 1 1v1h1v2h1v1h1v0l1-1 1-1 1-1 1-1 1-1v-1-1h1l1-1 1 1-1 1v1l-1 1-1 1v1l-1 1h1l1-1h1v-1l1-1 1-1 1-1h1l1-1h2v1l-1 1-1 1v1h-1v1h-1v2h-1v3h-1l2-1 1-1 1-2 1-1v-1h1v-1h1l1-1v-1h2v1h-1v1l-1 1h-1l-1 1v1l-1 1h-1v2h-1 3v-1h2v-1h2v1h1c1 0 0 0 0 0v2h-2l-1 1s0-1 0 0h3v1h1v1l-1 1h-1l1 1h1l1-1c1 0 0 0 0 0l1 1h1v2h1v4h-1l-1-1-1-1h-1v1h-2v1h1l1 1h1l1 1 1 1v1h2l1-1v-2l1-1h4l1-1h1l1 1h2l1 1h-4-1l-1 1h-3l-1 1v2h-1v1l-1 1h-1v1h-1v1l-1 1v1l-1 1 1 1-1 1-1 1v7h7l9 2 121 3-1-57zm-129 33zm-16-15zm0 0z" />
+		</a>
+  </g>
+  <g>
+		<a href="https://www.kaplanco.com/product/31708/sense-of-place-woven-baskets-set-of-3">
+			<title>Woven Basket</title>
+	    <path d="M810 407c0-11-3-18-6-22l-7-8-2-6-4-3-5-1-4-2h-2l-2-2v-2h-6l-5-10c-3-5-8-12-12-15s-8-2-11-2c-3 1-6 5-7 6l-2 6-1 6s-5-3-11-3-10 3-11 5l-3 3h-5v3l-11 1c-3 0-14 3-14 9l1 6s-8 5-9 10c-2 4-4 16-3 29l3 37c0 3 1 6 6 7l41 5c22 4 39 6 49 6 10 1 13-1 17-4l21-18c1-1 2-1 2-3v-13c1-5 3-13 3-25zm-93-50s3-4 6-3c5 0 7 3 7 3h-13zm22 1s1-13 4-16c4-4 8-2 10 0s7 6 9 10l3 8-26-2z" />
+		</a>
+  </g>
+  <g>
+		<a href="https://www.kaplanco.com/product/31757/sense-of-place-42-inch-oval-table">
+			<title>Oval Table</title>
+	    <path d="M318 259l-12-2s-3 6-5 6l-21 1-24-1-7-3 2-3h-16l-6 10c-3 4-6 7-8 7-1 1-4 3-12 4l-24 2-8-3-5-5-6 2-17 1h-26c-2 0-3-4-3-4l-21 3c-15 3-30 7-36 10-5 3-10 6-8 12 1 5 17 7 17 7v52l10-1h12l2-40 68 7 7 133 8 1 8-3 1-132 25-6v35l18-5 1-34 27-6 4-34h12l1 3 21-3c11-2 18-5 18-5v-3l2-2h8l-7-1zM216 386h5l10-2v-9l-15-3v14zm95-81l-11 3 1 14 9-3 1-14zm0 27l-9 2 1 10h7l1-12zm0 34l-6 3 1 6h5v-9zm-3 33v9h6l-1-11-5 2z" />
+		</a>
+  </g>
+</svg>
