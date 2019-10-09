@@ -1,0 +1,27 @@
+// Image Map Hover Boxes
+
+.sop-imgmap svg {
+  height: initial;
+}
+
+.sop-info-box {
+  background-color: $sop-green;
+  border: 3px solid $white;
+  border-radius: 3px;
+  box-shadow: 1px 3px 6px rgba(0,0,0,0.16);
+  color: $white;
+  display: none;
+  left: 0px;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+
+  div {
+    font-size: 1.125em;
+
+    &:last-of-type {
+      font-size: .875em;
+    }
+  }
+}
