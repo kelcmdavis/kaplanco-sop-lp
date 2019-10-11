@@ -2,7 +2,7 @@
 	<defs>
 		<style>
 			svg {
-				background-image: url(images/sop-kitchen.png);
+				background-image: url(images/sop-fireplace.png);
 				background-size: 100% 100%;
 				background-repeat: no-repeat;
 				max-width: 1200px;
