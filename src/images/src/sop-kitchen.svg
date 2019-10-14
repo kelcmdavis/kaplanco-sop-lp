@@ -1,73 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 727">
   <defs>
 		<style>
-      svg {
-        background-image: url(images/sop-kitchen.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        max-width: 1200px;
-        width: 100%;
-        border: 0 solid #FFFFFF;
-        border-radius: 15px;
-      }
-      path {
-        fill: transparent;
-        cursor: pointer;
-        transition: fill 0.2s;
-      }
-      svg a:focus,
-      svg a:hover {
-        outline: none;
-      }
-      svg a:focus path,
-      svg a:hover path {
-        fill: rgba(216, 209, 94, 0.5);
-        cursor: pointer;
-      }
-    </style>
-  </defs>
-  <g id="Kitchen_Island" data-info="<div>Kitchen Island</div><div>Item 31704</div>">
+			svg {
+				background-image: url(images/sop-kitchen.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				max-width: 1200px;
+				width: 100%;
+				border: 0 solid #FFFFFF;
+				border-radius: 15px;
+			}
+			path {
+				fill: transparent;
+				cursor: pointer;
+				transition: fill 0.2s;
+			}
+			svg a:focus,
+			svg a:hover {
+				outline: none;
+			}
+			svg a:focus path,
+			svg a:hover path {
+				fill: rgba(216, 209, 94, 0.5);
+				cursor: pointer;
+			}
+		</style>
+	</defs>
+  <g id="Stools">
+    <a href="https://www.kaplanco.com/product/32844/sense-of-place-kitchen-island-stools-set-of-2?c=1%7CSO1000">
+      <title>Kitchen Island Stools</title>
+      <path d="M625 528l14-1-25-102-118 9-3 12v46l11-1 13-57 18 3-2 50 20-3h2l2-33-1 33 8 1 14 3-3-52 20-2 14 61 17 6a654 654 0 00-1 27zM333 390c-6 0-14 7-14 14v10s-6 1-5 7c0 6 5 7 5 7l-31 145 6 5 13-2 5-21 34 13-1 30 6 3h12l2-1-2-212-30 2zm13 166l-31-12 1-6 32-4-2 22zm2-32l-29 4 18-81 15 2-4 75zm45-103l1 118 32 12 16-1-2-46 1-2v-1l2-1 6-1-15-71-41-7zm30 119l-19-7-4-83 16-1 21 90-14 1z"/>
+    </a>
+  </g>
+  <g id="Kitchen_Island">
     <a href="https://www.kaplanco.com/product/31704/sense-of-place-kitchen-island?c=1%7CSO1000">
-			<title>Kitchen Island</title>
-      <path d="M688 474h-2l1 4v5l1 1 2 1v-5-6h-2zm-20-139l-1-4v-2h-14l-5 5a222 222 0 0020 1zm166 12l2-5c0-1 0-4-3-4l-138-10v7c-1 3-5 4-5 4l-1 1-9 1-7-1-1-1-22 1-24-1-1 1-9 1-8-1v-1l-7 1h-9-9l-1-1-15 1-19-1v-3l-2-2-195 8c-6 0-9 2-9 4s2 5 3 5l18 2 1 268 10 5 12-2 8-15v-24l65 27v38l4 18 10 3 15-3 6-19v-49l184-25 1 5 10 2 9-1 3-9 70-10 19 6-1 30 9 17 11 2 11-2 5-247 6-2c3-1 7-5 7-11-1-6-4-8-4-8zM459 562l-17-6v-7l-14 2-33-11-2-120 65 14 1 128zm331-38l-70-15 1 7c0 9-3 12-5 16l-10 14-3 3c-1 1-1 0-1-1l2-3-2-1-12-2-13 4v6h-3l-1-6-2-1-4-2c-1-2-6-5-7-5l-3-1-4 1 1 2 1 2-2 1-8-13-2-4-18 2v3a848 848 0 01-1 29l-3 3-115 16-6 1-7-2v-85l-1-58 183-15v31l7-1c7 0 12 2 12 2v-6-8h2l1-2h1l1 5v9l1 6 1 2 1-8h1v9l1 1v-42l87-7-1 113zm-87-42l-2 9v3h3v-27l-1 15zm-13-27l-9-2-6 2v11h1l3 2 3 1 2 1v1h2l2 2h2v-2-2l-2-6-1-3c0-1 0-2 1-1l2 2 1-2 2 2 1 1 1-1v-4l-5-2z" />
+      <title>Kitchen Island</title>
+      <path d="M704 471l-2 14-1 6 1 3v1h3v-27l-1-1v4zm130-126s2-1 2-3c0-3-7-5-7-5l-130-8h-3l-3 7c0 2-3 3-4 4h-18-45l-10 1h-9v-1h-25a396 396 0 01-32-2c-2-1-2-3-2-3l-3-2-197 9s-5 1-5 4 4 5 5 5l15 2 2 269 7 3 13-1 9-14-1-25 66 26v35l3 21 10 4 15-2 5-20 1-49 185-24 1 4 8 3 10-1 4-9 69-11 19 5v30l10 18 9 2 11-2 5-246 4-3c2 0 9-2 9-10 1-8-3-11-3-11zM442 556l-1-6-14 1-33-12-1-118 65 12 1 129-17-6zm347-32l-69-15 1 4c0 7-1 13-6 20l-11 16h-2v-2l2-3h-2l-3-1-9-1-12 3c-2 1 0 1-1 3v4h-3v-4l-3-2-2-2-3-2-6-4h-7l1 3v2c-1 0-2 0-2-2l-6-11-2-3-19 2v12c1 8 1 17-1 19-1 3-1 4-9 5a1149 1149 0 00-111 15l-11-1 1-144 182-14v30h8c6 0 11 2 11 2v-7l1-8 1 3c0 2 0 0 0 0l1-4v-1l2 9v11l1 1c1 1 2 1 2-1v-7l1 5v6l1 1v-43l87-7-3 113zM661 335l9 2s-3-4-3-8v-1l-13 1a28 28 0 00-5 5l12 1zm23 118l-8 2v11l2 1 3 1 1 2 2 1 2 1 1 2 1 5v3l1 2h1v-5-3l-1-3 1-1v-4-2-3l-1-1-1-2-1-2 2 2h2v-1l2 2 1 1 1 3v-5-3s-5-4-11-4z"/>
     </a>
   </g>
-  <g id="Storage_Basket" data-info="<div>Standard Classroom Storage Basket</div><div>Item 31875</div>">
-    <a href="https://www.kaplanco.com/product/31875/sense-of-place-rectangular-storage-baskets-set-of-3?c=1|SO1000">
-			<title>Standard Classroom Storage Basket</title>
-      <path stroke-miterlimit="10" d="M267 409v41l23 7 64-5-4-49-31 4-29 1 8 7h-7l-12-2 5-4z"/>
-      <path d="M624 500l-8-3a260 260 0 00-27-8l-10-1-13-3-6-1-7 1-16 2-34 4-10 2v85l8 2 5-1 115-16 3-3 1-6a848 848 0 002-52l-3-2zm-180 1l-3 1-1 3 1 23 1 28 17 6v-64l-15 3zm-125-94l-29 1 8 7h-7l-12-2 5-4h-17v41l22 6 65-4-4-49-31 4zm520 30l-2 1-1 44v3l99 21 1-58-62-10-35-1zm155 19h-35l-2 1-1 50 104 21 2-62-68-10z" />
+  <g id="Range_and_Sink">
+    <a href="https://www.kaplanco.com/product/31698/sense-of-place-range-and-sink?c=1%7CSO1000">
+      <title>Range and Sink</title>
+      <path d="M400 457l1-1v-6h-1v7zm-63-10l-7 29 20-1 1-24-15 1 1-5zm65-134c0-5-1-7-4-7l-37-3c-3 0-5-2-5-4v-11c0-5-3-5-4-5h-9c-3 0-3 2-3 2l-21-3 5-7c2-3-2-3-3-1l-5 7-16-2v-2l-3-1v-25c0-9 3-15 7-15s5 13 5 13l3 1 2-1s1-4-1-9c-1-6-5-9-10-9s-12 4-12 13l-1 33h-2l-34-2v1l7 6 2 6-4 8v2l-2 11-6-3-3 3-2 1h-18v-1l-8-2-1-27 2-6c-61 0-131 15-131 15l-2-1h-6c-2 0-4 1-4 4l1 167 10 6v23l4 2h9l3-5v-2l16 6v5l1 10 4 2 10-1 5-11v-3l167-13 5-24-24 2-23-7v-41h16v-3h4l2 2 1 1 29-2v-2c0-7 8-14 14-14l30-2v-35l-14-2c-2 0-6-2-6-5s6-4 6-4l53-3 1-26zm-142-26c0-2-5-6-5-6v9l2 3s3-3 3-6z"/>
     </a>
   </g>
-  <g id="Stools" data-info="<div>Kitchen Island Stools</div><div>Item 32844</div>">
-    <a href="https://www.kaplanco.com/product/32844/sense-of-place-kitchen-island-stools-set-of-2?c=1|SO1000">
-			<title>Kitchen Island Stools</title>
-      <path d="M336 389c-8 1-15 6-16 10l-1 15-6 5 1 6 4 2-30 146 6 5 14-1 4-22 34 12-1 32 7 3 10-1h2l-1-213-27 1zm11 167l-32-10 1-8 31-3v21zm2-31l-30 3 18-81 15 3-3 75zm44-105l2 120 33 11 5-1 9-1-2-21v-23l1-3 3-2 6-1-17-70-40-9zm30 120l-18-6-5-84h16l21 89-14 1zm215-13l-24-102-117 9-4 18v41l10-2h1l14-57 18 3-2 50h3l17-2h1l3-42v41h2l6 1 11 2-2-51 21-1 14 60 6 2 8 3 3 2-1 26 12-1z" />
-    </a>
-  </g>
-  <g id="Range_and_Sink" data-info="<div>Range and Sink</div><div>Item 31698</div>">
-    <a href="https://www.kaplanco.com/product/31698/sense-of-place-range-and-sink?c=1|SO1000">
-			<title>Range and Sink</title>
-      <path d="M330 477l21-2 1-23-17 1-5 24zM80 349l1-2v-1s0-2-2-3a145 145 0 001 6zm322-37c-1-4-2-6-4-7l-40-2c-2 0-2-3-2-4l-1-13c0-2-2-3-3-3h-10l-2 2-18-3-2-1 4-5v-4c-1-1-4 2-5 5l-3 4a960 960 0 00-17-4h-2v-16l1-18c1-4 4-7 5-7s3 2 4 5l2 8 2 1 3-1v-9l-6-8h-9c-3 1-8 6-8 13v32h-3l-23-2h-10v16l4 8-2 10-5-3-1 1-3 2-6 1h-13l-1-1-3-1-2-1-2-2-1-24 2-7-19 1-53 4c-26 3-59 10-59 10l-2-1h-8l-2 4v20c1 0 2 0 1 1l-1 1v9h1l1-1 2-1 1 2 1 2-1 2h-5v14l2 2c1 1 2 2 3 1h7l-2 2-4 2c-1 1-1-1-2-1h-2v2l-2 2c1 0 0 0 0 0v3l1 2 1 3h4l-3 2-3 2 1 10h1v-4l2 2 4 3c1 1 3 2 2 3l-2 3-1-3-2-4-1-1-2 3h-2l1 3h2l-1 2c-1 1 0 2 1 3h2v2h-4v75l10 5v24l3 2 9-1 4-7 15 7 2 13 4 3 10-1 4-10v-4l166-13 5-24-23 2-22-7v-41h17l-5 4 12 2h7l-8-6 29-2 1-7c1-5 8-10 16-10l23-1 2-1h2v-35l-18-2c-1 0-3-3-3-5 0-1 3-4 9-4l50-2 1-27zm-198-18l-12 3-2 6-5 4h-23l-6-7-2-6s6-2 13-2h17l9 2 10-3c2 0 5 1 1 3zm196 163h1v-7h-1v7z" />
-    </a>
-  </g>
-  <g id="Refrigerator" data-info="<div>Refrigerator</div><div>Item 31705</div>">
-    <a href="https://www.kaplanco.com/product/31703/sense-of-place-refrigerator?c=1|SO1000">
+  <g id="Refrigerator">
+    <a href="https://www.kaplanco.com/product/31703/sense-of-place-refrigerator?c=1%7CSO1000">
       <title>Refrigerator</title>
-      <path d="M649 203l-24-2-4 1v1l-132 3-7-2c-1 0-4 1-4 4v128l68-2-1-1c-3-1-3-3-4-6 0-2 0-5 2-7s4-5 4-6l-2-4c0-1 1-2 4-2h9v-2l-2-1 1-2 2 2 1 1 1-1-1-1 2-1-1-2-2-1 1-2v-3h6l2-1 2 1 1-2h2c2 1 1 1 1 2l-1 1 2 1 4 3c2 2-1 1-2 2l-3 1 5 1 2 3-1 2 2 1 6 2c2 1 1 3 1 3h8c6 1 8 3 8 3v2h7v-5l3-7 7-11 7-3 3-2-1-2 4-2 5 2c0 2-2 2-2 3l5 1 7 4 2 3v-95c0-2-1-3-3-3zM493 452l4-18-4 1v17zm16 17l26 2 1-34-19-3-8 35zm105-44l13 52 24-15v-40l-37 3zm-58 47h2v-29l-2 29zm19-36l1 37 29 1-9-39-21 1z" />
+      <path d="M509 470l25 2 2-35-19-3-8 36zm-15-24l2-12-2 1v11zm153-243l-22-1-4 1-131 3-8-1c-1-1-4 0-4 3v128l67-3c-2-1-4-3-4-7-1-6 7-9 7-10 1-1-1-4-2-5v-3h6l4-1h3l-1-2-1-1h5l-1-4h-1l1-3-1-1v-1h2l1 1h2c0-1-1-1 1-1h4l1-2h2l1 1v1l-1 1c0 1-1 1 1 1l1 1h1l2 1 1 2c0 1 0 0 0 0l-1 1h-2l-1 1s1-1 0 0l-1 1c-1 1-2 0-1 1l3 1v-1h2l1 2v1l-1 1-1 1v1h8l3 3-2 2h8l9 1 1 2v2l8-1v-6l6-12 5-5 2-1 4-2 3-2-1-2c-1-1 2-2 3-2l5 1v3c0 1-1 1 1 2l9 4 2 2 1-94c0-2-1-3-5-3zm-80 92zm60 182l24-15v-40l-37 3 13 52zm-51-41l2 39 27 2-9-42-20 1zm-19 37v-22l-2 22h2z"/>
     </a>
   </g>
-  <g id="Armoire" data-info="<div>Armoire</div><div>Item 31692</div>">
-    <a href="https://www.kaplanco.com/product/31692/sense-of-place-armoire?c=1|SO1000">
-			<title>Armoire</title>
-      <path class="st6" d="M1185 158l-74-2c-5 0-5 5-5 5l-189 10h-54c-3 0-4 1-4 3l-2 217c0 7-3 15-6 18-3 4-7 7-11 7h-12v34l-2 37 1 2 1 3 3 1-1 35 7 2 10-1 7-12 189 39v4l5 16 11 2 10-1 4-15v-5l58-9 9 14 11 1 9-1 1-34 15-2 11-366-2-2zM935 506l-98-21-1-3 1-44 2-1 36 1 61 10-1 58zm125 22l-104-21 1-50 2-1h35l68 10-2 62z"/>
-      <path class="st6" d="M1185 158l-74-2c-5 0-5 5-5 5l-189 10h-54c-3 0-4 1-4 3l-2 217c0 7-3 15-6 18-3 4-7 7-11 7h-12v34l-2 37 1 2 1 3 3 1-1 35 7 2 10-1 7-12 189 39v4l5 16 11 2 10-1 4-15v-5l58-9 9 14 11 1 9-1 1-34 15-2 11-366-2-2zM935 506l-98-21-1-3 1-44 2-1 36 1 61 10-1 58zm125 22l-104-21 1-50 2-1h35l68 10-2 62z"/>
+  <g id="Armoire">
+    <a href="https://www.kaplanco.com/product/31692/sense-of-place-armoire?c=1%7CSO1000">
+      <title>Armoire</title>
+      <path d="M1186 159l-74-2c-3 0-5 3-5 3l-194 12-50-2c-3 0-5 2-5 5l-2 223c0 10-10 17-14 18l-15 1s2 14 1 30l-2 41 2 1v2l2 2-1 34 8 2h10l8-12 188 39v3l5 17 12 2 8-1 6-15-1-4 59-9 8 13 12 1 8-1v-34l17-2 11-365-2-2zM934 505l-99-20v-4l2-43 37-1 62 11-2 57zm126 23l-105-22 2-50h42l63 10-2 62z"/>
     </a>
   </g>
-  <g id="Mirror" data-info="<div>Circle Acrylic Mirror</div><div>Item 31868</div>">
-    <a href="https://www.kaplanco.com/product/31868/sense-of-place-circle-acrylic-mirror?c=1|SO1000">
-			<title>Circle Acrylic Mirror</title>
-      <path d="M836 342c0 2-3 4-3 4l3 4c8-5 15-11 21-17l2-159c0-2 1-3 4-3a83 83 0 00-63-34c-48 0-86 50-86 111 0 33 11 63 29 83l89 7c4 0 4 3 4 4z" />
+  <g id="Mirror">
+    <a href="https://www.kaplanco.com/product/31868/sense-of-place-circle-acrylic-mirror?c=1%7CSO1000">
+      <title>Circle Acrylic Mirror</title>
+      <path d="M829 337s7 2 7 5c0 2-2 3-2 3l2 3c8-4 15-10 21-16l1-158c0-2 2-4 5-4a79 79 0 00-62-34c-48 0-87 50-87 111 0 34 12 64 31 84l84 6z"/>
+    </a>
+  </g>
+  <g id="Storage_Baskets">
+    <a href="https://www.kaplanco.com/product/31875/sense-of-place-rectangular-storage-baskets-set-of-3?c=1%7CSO1000">
+      <title>Rectangular Storage Baskets</title>
+      <path d="M610 495l-18-5-28-5h-10l-44 5-17 2v87h4v1h7a3322 3322 0 00112-15c7-1 7-2 8-5 2-2 2-11 1-19v-1-1-1-1-2-1-1-1-2l1-19v-10l-16-6zm-167 5h-2v2l-1 2 2 52 17 5-1-64-15 3zm395-62l-3 43v4l99 20 2-57-62-10h-36zm161 18h-42l-2 51 105 21 2-62-63-10zm-685-35c-1-6 5-7 5-7v-7l-29 1-1-1-3-1-3-1v3l-16 1-1 41 24 6 24-2 5-26s-5-1-5-7zm22 31l16-1v-1l-15-3-1 5z"/>
+    </a>
+  </g>
+  <g id="Carpet">
+    <a href="https://www.kaplanco.com/product/33167P/sense-of-place-natures-stripe-carpets-6-x-9">
+      <title>Nature's Stripe Carpet</title>
+      <path d="M75 565l12 8 10 5c6 2 7 3 7 4l17 10 130 73 41 20 41 23 16 7 5 3 7 9H0V608s19 5 37 4c17-1 28-6 32-9 4-2 4-3 4-5l1-13 1-9 1-5-1-6z"/>
     </a>
   </g>
 </svg>
