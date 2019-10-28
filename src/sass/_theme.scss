@@ -33,14 +33,25 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+
+    &.sop-lkbk-grp {
+
+      .sop-content {
+        width: 50%
+      }
+    }
   }
 }
 
 .sop-row-mobile {
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+
+  @media (min-width: 671px) {
+    align-items: flex-start;
+  }
 }
 
 .sop-row-reverse {
@@ -68,6 +79,18 @@
 
 .sop-ml {
   padding-left: 32px;
+
+  @media (min-width: 671px) {
+    padding-left: 64px;
+  }
+}
+
+.sop-mt1 {
+  margin-top: 32px;
+}
+
+.sop-mt2 {
+  margin-top: 64px;
 }
 
 .sop-section {
@@ -94,6 +117,59 @@
   }
 }
 
+.sop-left-indent {
+
+  @media (min-width: 601px) {
+    margin-left: 96px;
+  }
+}
+
+.sop-mr-desk {
+  @media (min-width: 601px) {
+    padding-right: 32px;
+  }
+
+  @media (min-width: 1201px) {
+    padding-right: 64px;
+  }
+}
+
+.sop-ml-desk {
+  @media (min-width: 601px) {
+    padding-left: 32px;
+  }
+
+  @media (min-width: 1201px) {
+    padding-left: 64px;
+  }
+}
+
+@media (min-width: 671px) {
+  .sop-downdesk-1 {
+    margin-top: 34px;
+  }
+
+  .sop-downdesk-2 {
+    margin-top: 68px;
+  }
+
+  .sop-downdesk-3 {
+    margin-top: 102px;
+  }
+
+  .sop-updesk-1 {
+    margin-top: -34px;
+  }
+
+  .sop-updesk-2 {
+    margin-top: -68px;
+  }
+
+  .sop-updesk-3 {
+    margin-top: -102px;
+  }
+}
+
 // Images with cover size
 
 .sop-image {
@@ -107,12 +183,44 @@
   background-image: url('images/sop_lifestyle_mirrorcontainer.png');
   height: 375px;
   width: 100%;
+
+  @media (min-width: 671px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1201px) {
+    height: 700px;
+  }
+
+  @media (min-width: 1401px) {
+    height: 900px;
+  }
 }
 
 .sop-quoteimage {
   background-image: url('images/sop-quoteimage.png');
   height: 253px;
   width: 100%;
+
+  @media (min-width: 671px) {
+    height: 350px;
+  }
+
+  @media (min-width: 851px) {
+    height: 450px;
+  }
+
+  @media (min-width: 961px) {
+    height: 400px;
+  }
+
+  @media (min-width: 1201px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1401px) {
+    height: 590px;
+  }
 }
 
 .sop-lifestyle-kitchen {
@@ -138,40 +246,54 @@
   }
 
   .sop-quote {
-    color: $sop-green;
     background-color: $sop-lightgreen;
+    color: $sop-green;
     padding: 16px;
 
     p {
       color: $sop-green;
       font-style: italic;
-      margin: 0 0 8px 0;
+      margin: 0 0 8px;
       padding: 4px 4px 0 30px;
       position: relative;
 
       &:before {
-        color: rgba($sop-green, .7);
+        color: rgba($sop-green, .5);
         content: '\201c';
         display: block;
-        font-family: Kameron, "Open Sans", sans-serif;
+        font-family: Kameron, 'Open Sans', sans-serif;
         font-size: 3.75rem;
-        font-style: normal;
+        font-style: italic;
+        left: 0;
         line-height: 1rem;
         position: absolute;
-        left: 0;
         top: 16px;
+
+        @media (min-width: 1201px) {
+          font-size: 4.5em;
+          left: -14px;
+          top: 22px;
+        }
       }
 
       &:after {
         content: '\201c';
+      }
+
+      @media (min-width: 1201px) {
+        margin-left: 0;
       }
     }
 
     footer {
       font-size: .75em;
       font-weight: 700;
-      text-align: right;
       padding-left: 40px;
+      text-align: right;
+
+      @media (min-width: 1201px) {
+        font-size: 1em;
+      }
 
       cite {
         font-style: normal;
@@ -189,7 +311,7 @@
   h3,
   h4 {
     color: $sop-green;
-    font-family: Kameron, "Open Sans", sans-serif;
+    font-family: Kameron, 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     margin: 0;
@@ -213,6 +335,39 @@
   h4 {
     font-size: 1.25em;
     line-height: 1.25rem;
+  }
+
+  a {
+    color: $sop-green;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: lighten($sop-green, 10%);
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 1201px) {
+
+    p {
+      font-size: 1.25em;
+    }
+  }
+}
+
+.sop-header {
+  background-color: $sop-lightgreen;
+  padding: 16px;
+
+  h3 {
+    margin-bottom: .25rem;
+  }
+
+  p {
+    color: $sop-green;
+    font-size: .75em;
+    margin: 0;
   }
 }
 
@@ -266,11 +421,11 @@
   }
 
   @media (min-width: 1201px) {
-      height: 550px;
+    height: 550px;
   }
 
   @media (min-width: 1301px) {
-      height: 600px;
+    height: 600px;
   }
 
   @media (min-width: 1401px) {
@@ -293,9 +448,9 @@
   text-align: center;
 
   &:before {
+    background-color: rgba($sop-green, .7);
     content: '';
     display: block;
-    background-color: rgba($sop-green, .7);
     height: 16px;
     position: absolute;
     top: -16px;
@@ -309,8 +464,8 @@
     text-align: center;
 
     img {
-      width: 90%;
       max-width: 480px;
+      width: 90%;
     }
   }
 
@@ -339,8 +494,8 @@
       text-align: right;
 
       img {
-        width: 50%;
         max-width: 480px;
+        width: 50%;
       }
     }
 
@@ -380,61 +535,467 @@
 
 // Body
 
+.sop-sec-1 {
+
+  @media (min-width: 671px) {
+    align-items: center;
+
+    .sop-content {
+      width: 50%;
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.sop-sec-3 {
+  align-items: flex-start;
+
+  @media (min-width: 1201px) {
+    margin-top: -128px;
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -192px;
+  }
+}
+
+.sop-sec-4 {
+
+  @media (min-width: 671px) {
+    margin-top: -64px;
+
+    .sop-content:last-of-type {
+      margin-top: 64px;
+    }
+  }
+
+  @media (min-width: 701px) {
+    margin-top: -96px;
+
+    .sop-content:last-of-type {
+      margin-top: 96px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    margin-top: -160px;
+
+    .sop-content:last-of-type {
+      margin-top: 160px;
+    }
+  }
+
+  @media (min-width: 850px) {
+    margin-top: -192px;
+
+    .sop-content:last-of-type {
+      margin-top: 192px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    margin-top: -128px;
+
+    .sop-content:last-of-type {
+      margin-top: 128px;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    margin-top: -192px;
+
+    .sop-content:last-of-type {
+      margin-top: 192px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    margin-top: -256px;
+
+    .sop-content:last-of-type {
+      margin-top: 256px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -320px;
+
+    .sop-content:last-of-type {
+      margin-top: 352px;
+    }
+  }
+}
+
+.sop-sec-5 {
+
+  @media (min-width: 671px) {
+    margin-top: -64px;
+
+    .sop-content:last-of-type {
+      margin-top: 64px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    margin-top: -32px;
+
+    .sop-content:last-of-type {
+      margin-top: 48px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    margin-top: -96px;
+
+    .sop-content:last-of-type {
+      margin-top: 112px;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    margin-top: -64px;
+
+    .sop-content:last-of-type {
+      margin-top: 80px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    margin-top: -32px;
+
+    .sop-content:last-of-type {
+      margin-top: 48px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -32px;
+
+    .sop-content:last-of-type {
+      margin-top: 96px;
+    }
+  }
+}
+
+.sop-sec-6 {
+
+  @media (min-width: 671px) {
+    flex-flow: column nowrap;
+  }
+}
+
+.sop-sec-8 {
+
+  @media (min-width: 671px) {
+    margin-top: -48px;
+  }
+
+  @media (min-width: 851px) {
+    margin-top: -80px;
+  }
+}
+
+.sop-sec-9 {
+
+  @media (min-width: 671px) {
+
+    .sop-content:first-of-type {
+      margin-top: -32px;
+    }
+  }
+
+  @media (min-width: 801px) {
+
+    .sop-content {
+      margin-top: -96px;
+
+      &:first-of-type {
+        margin-top: -16px;
+      }
+    }
+  }
+}
+
 .sop-content {
 
   .sop-walling {
-    position: absolute;
-    max-width: 245px;
-    z-index: 10;
-    left: 32px;
-    top: 0;
+    margin: -64px 0 0;
+    padding: 0 16px 0 0;
+    width: 100%;
+
+    @media (min-width: 601px) {
+      margin: -32px 0 0;
+      padding: 0 16px 32px 0;
+    }
+
+    @media (min-width: 671px) {
+      padding: 0 32px 32px 0;
+      width: 100%!important;
+    }
+
+    @media (min-width: 1201px) {
+      margin: 32px 0 0;
+    }
+
+    @media (min-width: 1401px) {
+      margin: 96px 0 0;
+      padding: 0 32px 64px 0;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 671px) {
+
+    &.sop-fireplace {
+      width: 100%;
+    }
   }
 }
 
 .sop-fireplace {
-  margin-top: 96px;
+  margin-top: 128px;
 }
 
-.sop-baskets {
-  padding-left: 32px;
+.sop-baskets,
+.sop-24instorage {
+  padding-left: 16px;
+
+  @media (min-width: 671px) {
+    padding-left: 32px;
+  }
 }
 
 .sop-dunmarhau {
-  max-width: 90%;
   margin: 0 auto;
+  max-width: 90%;
   position: relative;
+
+  @media (min-width: 671px) {
+    margin-top: -16px;
+    max-width: 80%;
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -32px;
+    max-width: 85%;
+  }
+}
+
+.sop-kitchen {
+
+  @media (min-width: 671px) {
+    width: 100%;
+  }
+}
+
+.sop-rechkemmer {
+  margin: 0;
+
+  @media (min-width: 671px) {
+    margin-right: 32px!important;
+  }
+
+  @media (min-width: 851px) {
+    margin-top: 32px;
+  }
 }
 
 .sop-lifestyle-kitchen {
-  width: 66.66%;
   margin-left: auto;
+  width: 66.66%;
+
+  @media (min-width: 671px) {
+    margin-left: 32px;
+  }
+
+  @media (min-width: 801px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1201px) {
+    margin-left: 64px;
+  }
 }
 
 .sop-lifestyle-ovaltable {
-  width: 66.66%;
   border: 10px solid $white;
   border-radius: 25px;
   margin-bottom: -10px;
   margin-left: -10px;
+  width: 66.66%;
+
+  @media (min-width: 671px) {
+    margin-top: -16px;
+  }
+}
+
+.sop-devdunharrodros {
+  margin: 0;
+
+  @media (min-width: 671px) {
+    margin-left: 32px;
+  }
 }
 
 // About Sandra
 
 .sop-bio {
-  color: $sop-green;
   background-color: $sop-lightgreen;
+  color: $sop-green;
+  font-size: .875em;
+  margin-top: 32px;
+  padding: 16px;
 
   .sop-row {
+    align-items: flex-end;
     display: flex;
     flex-flow: row nowrap;
-    align-items: flex-end;
+    margin-top: -56px;
 
     img {
       border: 8px solid $white;
       border-radius: 20px;
-      margin-left: 16px;
       margin-right: 16px;
-      width: 45%;
+      width: 40%;
     }
+
+    h3 {
+      font-size: 2.5em;
+      line-height: 2rem;
+    }
+  }
+
+  p {
+    color: $sop-green;
+  }
+}
+
+// I&I List
+
+.sop-blog-list {
+  margin-top: 32px;
+
+  .sop-blog-teaser {
+    border-bottom: 1px solid $grey-light;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+
+    img {
+      border-radius: 15px;
+      margin-bottom: 16px;
+    }
+
+    h4 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.25em;
+      font-weight: 700;
+      margin: 0 0 16px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .sop-blog-readmore {
+      font-weight: 700;
+      margin-top: 16px;
+      text-align: right;
+
+      a:after {
+        -webkit-font-smoothing: antialiased;
+        content: '\00A0\e904';
+        font-family: 'icomoon'!important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        speak: none;
+      }
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .sop-list {
+    padding-bottom: 1em;
+    padding-right: 1em;
+    vertical-align: top;
+  }
+}
+
+// Product List
+
+.sop-shop-list {
+  margin-top: 32px;
+
+  .sop-item {
+    margin: 0 auto 32px;
+    max-width: 250px;
+
+    .sop-product-image {
+      margin-bottom: 16px;
+    }
+
+    .sop-product-name {
+      color: $sop-green;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .sop-product-number {
+      font-size: .75em;
+      margin-bottom: 8px;
+    }
+
+    .sop-product-price {
+      color: $sop-green;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    .sop-product-link {
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .button {
+        background-color: $sop-green;
+        border-color: $sop-green;
+
+        &:hover {
+          background-color: $white;
+          color: $sop-green!important;
+        }
+      }
+    }
+  }
+}
+
+// Bottom Hero
+
+.sop-bottom-hero {
+  align-items: flex-end;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.3) 100%), url('images/sop-footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 443px;
+  padding: 16px;
+  margin-bottom: 32px;
+
+  .sop-logo-bottom {
+    width: 75%
   }
 }
