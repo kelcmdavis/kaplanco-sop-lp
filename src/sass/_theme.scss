@@ -33,6 +33,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-top: 32px;
 
     &.sop-lkbk-grp {
 
@@ -104,7 +105,7 @@
 .sop-mobile-img {
   display: inline-block;
 
-  @media (min-width: 601px) {
+  @media (min-width: 671px) {
     display: none;
   }
 }
@@ -112,7 +113,7 @@
 .sop-desktop-img {
   display: none;
 
-  @media (min-width: 601px) {
+  @media (min-width: 671px) {
     display: inline-block;
   }
 }
@@ -125,7 +126,7 @@
 }
 
 .sop-mr-desk {
-  @media (min-width: 601px) {
+  @media (min-width: 671px) {
     padding-right: 32px;
   }
 
@@ -135,7 +136,7 @@
 }
 
 .sop-ml-desk {
-  @media (min-width: 601px) {
+  @media (min-width: 671px) {
     padding-left: 32px;
   }
 
@@ -226,13 +227,11 @@
 .sop-lifestyle-kitchen {
   background-image: url('images/sop_lifestyle_kitchen.png');
   height: 310px;
-  width: 75%;
 }
 
 .sop-lifestyle-ovaltable {
   background-image: url('images/sop_lifestyle_ovaltable.png');
   height: 310px;
-  width: 75%;
 }
 
 // Typography
@@ -689,8 +688,15 @@
 
 .sop-sec-8 {
 
+  .sop-content:first-of-type {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+  }
+
   @media (min-width: 671px) {
     margin-top: -48px;
+    padding: 0;
   }
 
   @media (min-width: 851px) {
@@ -701,9 +707,14 @@
 .sop-sec-9 {
 
   @media (min-width: 671px) {
+    align-items: center;
 
-    .sop-content:first-of-type {
-      margin-top: -32px;
+    .sop-content p {
+      margin: 0;
+    }
+
+    .sop-content:last-of-type {
+      padding-left: 32px;
     }
   }
 
@@ -713,9 +724,113 @@
       margin-top: -96px;
 
       &:first-of-type {
-        margin-top: -16px;
+        margin-top: -128px;
       }
     }
+  }
+
+  @media (min-width: 1101px) {
+
+    .sop-content {
+      margin-top: -128px;
+
+      &:first-of-type {
+        margin-top: -360px;
+      }
+    }
+  }
+
+  @media (min-width: 1201px) {
+
+    .sop-content {
+      margin-top: -128px;
+
+      &:first-of-type {
+        margin-top: -232px;
+      }
+
+      &:last-of-type {
+        padding-left: 64px;
+      }
+    }
+  }
+
+  @media (min-width: 1401px) {
+
+    .sop-content {
+      margin-top: -228px;
+
+      &:first-of-type {
+        margin-top: -360px;
+      }
+    }
+  }
+}
+
+.sop-sec-10 {
+
+  .sop-content:last-of-type {
+    margin-bottom: -10px;
+    margin-left: -10px;
+    width: 66.66%;
+  }
+
+  @media (min-width: 671px) {
+    align-items: center;
+
+    .sop-content:last-of-type {
+      width: 50%;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  @media (min-width: 801px) {
+
+    .sop-content {
+      margin-top: -96px;
+    }
+  }
+
+  @media (min-width: 1101px) {
+
+    .sop-content {
+      margin-top: -320px;
+
+      &:last-of-type {
+        margin-top: -64px;
+        padding-left: 64px;
+      }
+    }
+  }
+
+  @media (min-width: 1201px) {
+
+    .sop-content {
+      margin-top: -192px;
+
+      &:last-of-type {
+        margin-top: -96px;
+      }
+    }
+  }
+
+  @media (min-width: 1401px) {
+
+    .sop-content {
+      margin-top: -320px;
+
+      &:last-of-type {
+        margin-top: -96px;
+      }
+    }
+  }
+}
+
+.sop-sec-11 {
+
+  @media (min-width: 671px) {
+    display: block;
   }
 }
 
@@ -764,10 +879,11 @@
 
 .sop-baskets,
 .sop-24instorage {
-  padding-left: 16px;
+  margin-top: 32px;
 
   @media (min-width: 671px) {
     padding-left: 32px;
+    margin-top: 0;
   }
 }
 
@@ -807,40 +923,50 @@
 }
 
 .sop-lifestyle-kitchen {
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
   margin-left: auto;
-  width: 66.66%;
+
+  @media (min-width: 801px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1101px) {
+    height: 700px;
+  }
+
+  @media (min-width: 1401px) {
+    height: 900px;
+  }
+}
+
+.sop-lifestyle-ovaltable {
+  background-position: center;
+  background-size: cover;
+  border: 10px solid $white;
+  border-radius: 25px;
 
   @media (min-width: 671px) {
-    margin-left: 32px;
+    border: 0;
+    border-radius: 15px;
   }
 
   @media (min-width: 801px) {
     height: 500px;
   }
 
-  @media (min-width: 1201px) {
-    margin-left: 64px;
+  @media (min-width: 1101px) {
+    height: 700px;
   }
-}
 
-.sop-lifestyle-ovaltable {
-  border: 10px solid $white;
-  border-radius: 25px;
-  margin-bottom: -10px;
-  margin-left: -10px;
-  width: 66.66%;
-
-  @media (min-width: 671px) {
-    margin-top: -16px;
+  @media (min-width: 1401px) {
+    height: 900px;
   }
 }
 
 .sop-devdunharrodros {
   margin: 0;
-
-  @media (min-width: 671px) {
-    margin-left: 32px;
-  }
 }
 
 // About Sandra
@@ -852,17 +978,15 @@
   margin-top: 32px;
   padding: 16px;
 
-  .sop-row {
+  .sop-bio-header {
     align-items: flex-end;
     display: flex;
-    flex-flow: row nowrap;
-    margin-top: -56px;
 
-    img {
+    .sop-bio-img {
       border: 8px solid $white;
-      border-radius: 20px;
-      margin-right: 16px;
-      width: 40%;
+      border-radius: 22px;
+      margin: -54px 16px 0 0;
+      max-width: 200px;
     }
 
     h3 {
@@ -871,8 +995,119 @@
     }
   }
 
-  p {
-    color: $sop-green;
+  .sop-bio-header,
+  .sop-bio-body {
+    margin-top: 0;
+  }
+
+  .sop-bio-body {
+
+    p {
+      color: $sop-green;
+      font-size: .875em;
+    }
+  }
+
+  @media (min-width: 671px) {
+
+    .sop-bio-header {
+      display: block;
+      width: 50%;
+      padding-right: 16px
+    }
+
+    .sop-bio-header,
+    .sop-bio-body {
+      margin-top: 0;
+    }
+
+    .sop-bio-body {
+      position: relative;
+
+      .sop-bio-img {
+        float: right;
+        border: 8px solid $white;
+        border-radius: 22px;
+        margin: 0 0 -120px 16px;
+        position: relative;
+        top: -128px;
+        width: 220px;
+      }
+    }
+  }
+
+  @media (min-width: 801px) {
+
+    .sop-bio-header {
+      width: 66.66%;
+    }
+
+    .sop-bio-body {
+
+      .sop-bio-img {
+        margin: 0 0 -96px 16px;
+        top: -96px;
+        width: 160px;
+      }
+    }
+  }
+
+  @media (min-width: 961px) {
+
+    .sop-bio-body {
+
+      .sop-bio-img {
+        margin: 0 0 -96px 16px;
+        top: -96px;
+        width: 192px;
+      }
+    }
+  }
+
+  @media (min-width: 1101px) {
+
+    .sop-bio-body {
+
+      .sop-bio-img {
+        width: 168px;
+      }
+    }
+  }
+
+  @media (min-width: 1201px) {
+    padding: 32px;
+
+    .sop-bio-header h3 {
+      font-size: 3em;
+    }
+
+    .sop-bio-body {
+
+      p {
+        font-size: 1em;
+      }
+
+      .sop-bio-img {
+        border: 15px solid $white;
+        border-radius: 30px;
+        margin: 0 0 -96px 32px;
+        top: -128px;
+        width: 250px;
+      }
+    }
+  }
+
+  @media (min-width: 1201px) {
+    margin-top: 58px;
+
+    .sop-bio-body {
+
+      .sop-bio-img {
+        margin: -156px 0 32px 32px;
+        position: static;
+        width: 250px;
+      }
+    }
   }
 }
 
