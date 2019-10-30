@@ -26,14 +26,12 @@
 
 .sop-row {
   display: block;
-  margin-top: 16px;
   position: relative;
 
   @media (min-width: 671px) {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top: 32px;
 
     &.sop-lkbk-grp {
 
@@ -59,43 +57,8 @@
   flex-direction: row-reverse;
 }
 
-.sop-2col {
-
-  div {
-    width: 50%;
-  }
-}
-
-.sop-up-1 {
-  margin-top: -34px;
-}
-
-.sop-up-2 {
-  margin-top: -68px;
-}
-
-.sop-up-3 {
-  margin-top: -102px;
-}
-
-.sop-ml {
-  padding-left: 32px;
-
-  @media (min-width: 671px) {
-    padding-left: 64px;
-  }
-}
-
-.sop-mt1 {
-  margin-top: 32px;
-}
-
-.sop-mt2 {
-  margin-top: 64px;
-}
-
 .sop-section {
-  margin-top: 64px;
+  margin-top: 32px;
 
   @media (min-width: 801px) {
     margin-top: 64px;
@@ -120,54 +83,12 @@
 
 .sop-left-indent {
 
-  @media (min-width: 601px) {
-    margin-left: 96px;
-  }
-}
-
-.sop-mr-desk {
   @media (min-width: 671px) {
-    padding-right: 32px;
+    margin-left: 16px;
   }
 
   @media (min-width: 1201px) {
-    padding-right: 64px;
-  }
-}
-
-.sop-ml-desk {
-  @media (min-width: 671px) {
-    padding-left: 32px;
-  }
-
-  @media (min-width: 1201px) {
-    padding-left: 64px;
-  }
-}
-
-@media (min-width: 671px) {
-  .sop-downdesk-1 {
-    margin-top: 34px;
-  }
-
-  .sop-downdesk-2 {
-    margin-top: 68px;
-  }
-
-  .sop-downdesk-3 {
-    margin-top: 102px;
-  }
-
-  .sop-updesk-1 {
-    margin-top: -34px;
-  }
-
-  .sop-updesk-2 {
-    margin-top: -68px;
-  }
-
-  .sop-updesk-3 {
-    margin-top: -102px;
+    margin-left: 32px;
   }
 }
 
@@ -186,15 +107,11 @@
   width: 100%;
 
   @media (min-width: 671px) {
-    height: 500px;
+    height: 520px;
   }
 
   @media (min-width: 1201px) {
-    height: 700px;
-  }
-
-  @media (min-width: 1401px) {
-    height: 900px;
+    height: 500px;
   }
 }
 
@@ -226,12 +143,12 @@
 
 .sop-lifestyle-kitchen {
   background-image: url('images/sop_lifestyle_kitchen.png');
-  height: 310px;
+  height: 370px;
 }
 
 .sop-lifestyle-ovaltable {
   background-image: url('images/sop_lifestyle_ovaltable.png');
-  height: 310px;
+  height: 370px;
 }
 
 // Typography
@@ -367,6 +284,28 @@
     color: $sop-green;
     font-size: .75em;
     margin: 0;
+  }
+
+  @media (min-width: 671px) {
+    width: 500px;
+
+    h3 {
+      font-size: 2.5em;
+      margin-bottom: .5rem;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    width: 600px;
+
+    h3 {
+      font-size: 3em;
+      margin-bottom: .75rem;
+    }
+
+    p {
+      font-size: 1em;
+    }
   }
 }
 
@@ -537,6 +476,7 @@
 .sop-sec-1 {
 
   @media (min-width: 671px) {
+    flex-flow: row nowrap;
     align-items: center;
 
     .sop-content {
@@ -547,83 +487,73 @@
       }
     }
   }
+
+  @media (min-width: 851px) {
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .sop-content {
+      width: 50%;
+    }
+  }
+}
+
+.sop-sec-2 {
+
+  .sop-fireplace {
+    margin-top: 128px;
+  }
+
+  .sop-walling {
+    position: absolute;
+    top: -64px;
+    left: 16px;
+    width: 245px;
+
+    blockquote {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 671px) {
+    display: block;
+    position: relative;
+
+    .sop-fireplace {
+      margin-top: 0;
+    }
+
+    .sop-walling {
+      top: initial;
+      left: initial;
+      bottom: -32px;
+      right: 32px;
+      width: 50%;
+      padding-left: 48px;
+    }
+  }
 }
 
 .sop-sec-3 {
-  align-items: flex-start;
 
-  @media (min-width: 1201px) {
-    margin-top: -128px;
-  }
+  @media (min-width: 671px) {
+    align-items: center;
+    margin-top: -64px;
 
-  @media (min-width: 1401px) {
-    margin-top: -192px;
+    .sop-content p {
+      margin-left: 22px;
+      margin-top: 96px;
+    }
   }
 }
 
 .sop-sec-4 {
 
   @media (min-width: 671px) {
-    margin-top: -64px;
+    align-items: center;
 
-    .sop-content:last-of-type {
-      margin-top: 64px;
-    }
-  }
-
-  @media (min-width: 701px) {
-    margin-top: -96px;
-
-    .sop-content:last-of-type {
-      margin-top: 96px;
-    }
-  }
-
-  @media (min-width: 760px) {
-    margin-top: -160px;
-
-    .sop-content:last-of-type {
-      margin-top: 160px;
-    }
-  }
-
-  @media (min-width: 850px) {
-    margin-top: -192px;
-
-    .sop-content:last-of-type {
-      margin-top: 192px;
-    }
-  }
-
-  @media (min-width: 960px) {
-    margin-top: -128px;
-
-    .sop-content:last-of-type {
-      margin-top: 128px;
-    }
-  }
-
-  @media (min-width: 1050px) {
-    margin-top: -192px;
-
-    .sop-content:last-of-type {
-      margin-top: 192px;
-    }
-  }
-
-  @media (min-width: 1201px) {
-    margin-top: -256px;
-
-    .sop-content:last-of-type {
-      margin-top: 256px;
-    }
-  }
-
-  @media (min-width: 1401px) {
-    margin-top: -320px;
-
-    .sop-content:last-of-type {
-      margin-top: 352px;
+    .sop-curio {
+      margin-left: 32px;
     }
   }
 }
@@ -631,207 +561,113 @@
 .sop-sec-5 {
 
   @media (min-width: 671px) {
-    margin-top: -64px;
+    align-items: center;
 
-    .sop-content:last-of-type {
-      margin-top: 64px;
-    }
-  }
-
-  @media (min-width: 760px) {
-    margin-top: -32px;
-
-    .sop-content:last-of-type {
-      margin-top: 48px;
-    }
-  }
-
-  @media (min-width: 960px) {
-    margin-top: -96px;
-
-    .sop-content:last-of-type {
-      margin-top: 112px;
-    }
-  }
-
-  @media (min-width: 1050px) {
-    margin-top: -64px;
-
-    .sop-content:last-of-type {
-      margin-top: 80px;
-    }
-  }
-
-  @media (min-width: 1201px) {
-    margin-top: -32px;
-
-    .sop-content:last-of-type {
-      margin-top: 48px;
-    }
-  }
-
-  @media (min-width: 1401px) {
-    margin-top: -32px;
-
-    .sop-content:last-of-type {
-      margin-top: 96px;
+    .sop-content p {
+      margin-left: 32px;
     }
   }
 }
 
 .sop-sec-6 {
 
+  .sop-dunmarhau {
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: -32px;
+  }
+
   @media (min-width: 671px) {
     flex-flow: column nowrap;
+  }
+
+  .sop-dunmarhau {
+
+    @media (min-width: 671px) {
+      max-width: 80%;
+    }
+
+    @media (min-width: 1401px) {
+      margin-top: -64px;
+      max-width: 85%;
+    }
   }
 }
 
 .sop-sec-8 {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  margin-top: -64px;
 
-  .sop-content:first-of-type {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 16px;
+  .sop-content {
+    flex: 0 0 50%;
   }
 
-  @media (min-width: 671px) {
-    margin-top: -48px;
-    padding: 0;
+  .sop-24instorage {
+    margin: 0;
+    padding-left: 16px;
+
+    @media (min-width: 671px) {
+      padding-left: 32px;
+      margin-top: 0;
+    }
   }
 
-  @media (min-width: 851px) {
-    margin-top: -80px;
+  .sop-rechkemmer {
+    max-width: 90%;
+    margin: 0 16px 0 16px;
+
+    @media (min-width: 671px) {
+
+    }
+
+    @media (min-width: 851px) {
+      margin-top: 32px;
+    }
   }
 }
 
 .sop-sec-9 {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: 32px;
 
-  @media (min-width: 671px) {
-    align-items: center;
+  .sop-content {
+    flex: 0 0 50%;
+    padding-left: 16px;
+    padding-right: 16px;
 
-    .sop-content p {
+    p {
       margin: 0;
-    }
-
-    .sop-content:last-of-type {
-      padding-left: 32px;
-    }
-  }
-
-  @media (min-width: 801px) {
-
-    .sop-content {
-      margin-top: -96px;
-
-      &:first-of-type {
-        margin-top: -128px;
-      }
-    }
-  }
-
-  @media (min-width: 1101px) {
-
-    .sop-content {
-      margin-top: -128px;
-
-      &:first-of-type {
-        margin-top: -360px;
-      }
-    }
-  }
-
-  @media (min-width: 1201px) {
-
-    .sop-content {
-      margin-top: -128px;
-
-      &:first-of-type {
-        margin-top: -232px;
-      }
-
-      &:last-of-type {
-        padding-left: 64px;
-      }
-    }
-  }
-
-  @media (min-width: 1401px) {
-
-    .sop-content {
-      margin-top: -228px;
-
-      &:first-of-type {
-        margin-top: -360px;
-      }
     }
   }
 }
 
 .sop-sec-10 {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: 32px;
 
-  .sop-content:last-of-type {
-    margin-bottom: -10px;
-    margin-left: -10px;
-    width: 66.66%;
+  .sop-content {
+    flex: 0 0 50%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  @media (min-width: 671px) {
-    align-items: center;
-
-    .sop-content:last-of-type {
-      width: 50%;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-  }
-
-  @media (min-width: 801px) {
-
-    .sop-content {
-      margin-top: -96px;
-    }
-  }
-
-  @media (min-width: 1101px) {
-
-    .sop-content {
-      margin-top: -320px;
-
-      &:last-of-type {
-        margin-top: -64px;
-        padding-left: 64px;
-      }
-    }
-  }
-
-  @media (min-width: 1201px) {
-
-    .sop-content {
-      margin-top: -192px;
-
-      &:last-of-type {
-        margin-top: -96px;
-      }
-    }
-  }
-
-  @media (min-width: 1401px) {
-
-    .sop-content {
-      margin-top: -320px;
-
-      &:last-of-type {
-        margin-top: -96px;
-      }
-    }
+  .sop-devdunharrodros {
+    margin: 0 0 0 -64px;
   }
 }
 
 .sop-sec-11 {
-
-  @media (min-width: 671px) {
-    display: block;
-  }
+  margin-top: 32px;
 }
 
 .sop-content {
@@ -873,12 +709,7 @@
   }
 }
 
-.sop-fireplace {
-  margin-top: 128px;
-}
-
-.sop-baskets,
-.sop-24instorage {
+.sop-baskets {
   margin-top: 32px;
 
   @media (min-width: 671px) {
@@ -887,38 +718,10 @@
   }
 }
 
-.sop-dunmarhau {
-  margin: 0 auto;
-  max-width: 90%;
-  position: relative;
-
-  @media (min-width: 671px) {
-    margin-top: -16px;
-    max-width: 80%;
-  }
-
-  @media (min-width: 1401px) {
-    margin-top: -32px;
-    max-width: 85%;
-  }
-}
-
 .sop-kitchen {
 
   @media (min-width: 671px) {
     width: 100%;
-  }
-}
-
-.sop-rechkemmer {
-  margin: 0;
-
-  @media (min-width: 671px) {
-    margin-right: 32px!important;
-  }
-
-  @media (min-width: 851px) {
-    margin-top: 32px;
   }
 }
 
@@ -944,8 +747,7 @@
 .sop-lifestyle-ovaltable {
   background-position: center;
   background-size: cover;
-  border: 10px solid $white;
-  border-radius: 25px;
+  border-radius: 15px;
 
   @media (min-width: 671px) {
     border: 0;
@@ -963,10 +765,6 @@
   @media (min-width: 1401px) {
     height: 900px;
   }
-}
-
-.sop-devdunharrodros {
-  margin: 0;
 }
 
 // About Sandra
@@ -1115,11 +913,10 @@
 
 .sop-blog-list {
   margin-top: 32px;
+  margin-bottom: -32px;
 
   .sop-blog-teaser {
-    border-bottom: 1px solid $grey-light;
     margin-bottom: 32px;
-    padding-bottom: 32px;
 
     img {
       border-radius: 15px;
@@ -1134,6 +931,7 @@
     }
 
     p {
+      font-size: .875em;
       margin: 0;
     }
 
@@ -1155,15 +953,39 @@
 
     &:last-of-type {
       border-bottom: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
+    }
+
+    @media (min-width: 671px) {
+      border-bottom: 0;
     }
   }
 
-  .sop-list {
-    padding-bottom: 1em;
-    padding-right: 1em;
-    vertical-align: top;
+  @media (min-width: 671px) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: -16px;
+
+
+    .sop-blog-teaser {
+      padding-bottom: 0;
+      padding-right: 16px;
+      padding-left: 16px;
+      flex: 0 0 50%;
+
+      @media (min-width: 901px) {
+        flex: 0 0 33.3333%;
+      }
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-right: -32px;
+
+
+    .sop-blog-teaser {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 }
 
@@ -1171,10 +993,12 @@
 
 .sop-shop-list {
   margin-top: 32px;
+  margin-bottom: -32px;
 
   .sop-item {
-    margin: 0 auto 32px;
-    max-width: 250px;
+    margin-bottom: 32px;
+    padding-left: 80px;
+    padding-right: 80px;
 
     .sop-product-image {
       margin-bottom: 16px;
@@ -1197,6 +1021,22 @@
       margin-bottom: 16px;
     }
 
+    @media (min-width: 1201px) {
+
+      .sop-product-name {
+        font-size: 1.125em;
+        margin-bottom: 12px;
+      }
+
+      .sop-product-number {
+        margin-bottom: 12px;
+      }
+
+      .sop-product-price {
+        font-size: 1.25em;
+      }
+    }
+
     .sop-product-link {
 
       a:hover {
@@ -1214,6 +1054,34 @@
       }
     }
   }
+
+  @media (min-width: 671px) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: -16px;
+
+
+    .sop-item {
+      padding-bottom: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      flex: 0 0 50%;
+
+      @media (min-width: 901px) {
+        flex: 0 0 33.3333%;
+      }
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-right: -32px;
+
+
+    .sop-item {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
 }
 
 // Bottom Hero
@@ -1229,8 +1097,39 @@
   height: 443px;
   padding: 16px;
   margin-bottom: 32px;
+  margin-top: 32px;
 
   .sop-logo-bottom {
     width: 75%
+  }
+
+  @media (min-width: 671px) {
+    margin-top: 64px;
+
+    .sop-logo-bottom {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 901px) {
+    padding: 32px;
+    height: 600px;
+
+    .sop-logo-bottom {
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    height: 900px;
+  }
+
+  @media (min-width: 1401px) {
+    padding: 64px;
+    height: 1100px;
+
+    .sop-logo-bottom {
+      width: 25%;
+    }
   }
 }
