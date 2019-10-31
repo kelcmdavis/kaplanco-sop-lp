@@ -14,6 +14,7 @@
 
   <!-- PD CSS -->
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="http://images.kaplanco.com/apple-touch-icon-57x57.png">
@@ -36,10 +37,12 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="https://images.kaplanco.com/javascript/modernizr.js" integrity="sha384-keTkaEMDesZZXA+yThM6SS+sKTTUt3QqQzrfgG4trhzckVa57RbXJATIU9xh9I+7" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
-  <title>Page Title</title>
+
+  <title>Sense of Place</title>
 </head>
 
 <body id="top" class="horizontal">
@@ -99,10 +102,9 @@
             </ul>
           </div>
 
-          <div class="iconNav_item cartView hidden-print"><a href="#" class="icon icon--orange"><span class="icon_icon icon-cart"></span>
-              <div class="icon_name">CART</div><span id="CartQty" class="cartView_number">0</span>
+          <div class="iconNav_item hidden-print"><a href="#" class="icon icon--orange"><span class="icon_icon icon-cart"></span>
+              <div class="icon_name">CART</div><span class="cartView_number">0</span>
             </a><span class="vert-shim"></span>
-            <div id="cartMenuDisplay" class="iconNav_menu cartView_dropdown"></div>
           </div>
         </div>
       </div>
@@ -276,7 +278,7 @@
             <a href="#">Home</a>
           </li>
           <li class="breadCrumbs_divider"><span class="icon-arrow-right"></span></li>
-          <li class="breadCrumbs_here">Page Title</li>
+          <li class="breadCrumbs_here">Sense of Place</li>
         </ul>
       </div>
       <span class="vert-shim"></span>
@@ -301,9 +303,9 @@
           <div class="col-sm-12">
             <div class="sop-navigation">
               <ul>
-                <li>About Sandra Duncan</li>
-                <li>Insights & Inspirations</li>
-                <li>Shop the Collection</li>
+                <li><a href="#II">Insights & Inspirations</a></li>
+                <li><a href="#collection">Shop the Collection</a></li>
+                <li><a href="#sandra">About Sandra Duncan</a></li>
               </ul>
             </div>
           </div>
@@ -331,7 +333,7 @@
           </div>
 
           <div class="sop-row sop-section sop-sec-2">
-            <div class="sop-content sop-imgmap sop-fireplace">
+            <div class="sop-content sop-imgmap sop-fireplace" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 890">
               	<defs>
               		<style>
@@ -380,7 +382,7 @@
                 </g>
               </svg>
             </div>
-            <div class="sop-content sop-walling">
+            <div class="sop-content sop-walling" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <blockquote class="sop-quote">
                 <p>Nature is our greatest teacher.</p>
                 <footer>
@@ -391,57 +393,10 @@
           </div>
 
           <div class="sop-row sop-row-reverse sop-lkbk-grp sop-sec-3">
-            <div class="sop-content">
+            <div class="sop-content" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <p>When designing the Sense of Place furniture collection, we looked to nature for inspiration. Unlike straight edges which serve as boundaries, the furniture’s design includes many rounded elements which invite children into the classroom space for authentic connections and playful learning.</p>
             </div>
-            <div class="sop-content sop-imgmap sop-baskets">
-              <svg version="1" id="Baskets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
-              	<defs>
-              		<style>
-                    .sop-baskets svg {
-                      background-image: url(images/sop-baskets.png);
-                      background-size: 100% 100%;
-                      background-repeat: no-repeat;
-                      max-width: 675px;
-                      width: 100%;
-                      border: 0 solid #FFFFFF;
-                      border-radius: 15px;
-                    }
-
-                    @media (min-width: 671px) {
-                      .sop-baskets svg {
-                        border: 10px solid #FFFFFF;
-                        border-radius: 25px;
-                      }
-                    }
-                    path {
-                      fill: transparent;
-                      cursor: pointer;
-                      transition: fill 0.2s;
-                    }
-                    svg a:focus,
-                    svg a:hover {
-                      outline: none;
-                    }
-                    svg a:focus path,
-                    svg a:hover path {
-                      fill: rgba(216, 209, 94, 0.5);
-                      cursor: pointer;
-                    }
-                  </style>
-                </defs>
-              	<g>
-              		<a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-tray-set-of-3?c=0%7CSO1000">
-              			<title>Circle Woven Mirror Tray Set</title>
-              		  <path d="M106 530c18 31 33 44 67 61a264 264 0 0 0 235-17c27-15 41-34 49-44 8-9 16-36 18-64s1-82-1-97-18-38-31-51-35-26-60-35-71-17-71-17l45-1c10-2 43-5 66-16 24-11 42-25 53-36s19-31 19-41l1-61c1-22-7-35-17-48s-33-27-46-33-38-13-60-15c-23-3-45-3-45-3-27 0-54 5-86 12-33 7-61 26-79 39-19 12-17 41-16 52 1 12 5 56 8 74 2 17 22 42 57 59 35 16 81 18 81 18l-38 2-20 4c-19 3-48 11-79 25s-57 40-68 57c-10 17-12 48-10 73 3 24 11 71 28 103zm391 294c-2-26-17-64-31-86-14-23-33-45-59-61s-77-41-130-42c-39-1-64 7-92 15-27 7-74 29-98 59s-51 71-53 121 6 70 6 70h450l4-14c1-7 4-35 3-62z" />
-              		</a>
-              	</g>
-              </svg>
-            </div>
-          </div>
-
-          <div class="sop-row sop-row-reverse sop-lkbk-grp sop-sec-4">
-            <div class="sop-content sop-imgmap sop-curio">
+            <div class="sop-content sop-imgmap sop-curio" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <svg version="1" id="Curio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 627 672">
               	<defs>
               		<style>
@@ -453,6 +408,12 @@
                       width: 100%;
                       border: 0 solid #FFFFFF;
                       border-radius: 15px;
+                    }
+                    @media (min-width: 671px) {
+                      .sop-curio svg {
+                        border: 10px solid #FFFFFF;
+                        border-radius: 25px;
+                      }
                     }
                     path {
                       fill: transparent;
@@ -478,13 +439,67 @@
               	</g>
               </svg>
             </div>
-            <div class="sop-content">
+          </div>
+
+          <div class="sop-row sop-row-reverse sop-lkbk-grp sop-sec-4">
+            <div class="sop-content sop-imgmap sop-baskets" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
+              <svg version="1" id="Baskets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+                <defs>
+                  <style>
+                    .sop-baskets svg {
+                      background-image: url(images/sop-baskets.png);
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                      max-width: 675px;
+                      width: 100%;
+                      border: 0 solid #FFFFFF;
+                      border-radius: 15px;
+                    }
+
+                    @media (min-width: 561px) {
+                      .sop-baskets svg {
+                        border: 10px solid #FFFFFF;
+                        border-radius: 25px;
+                      }
+                    }
+
+                    @media (min-width: 671px) {
+                      .sop-baskets svg {
+                        border: 0 solid #FFFFFF;
+                        border-radius: 15px;
+                      }
+                    }
+                    path {
+                      fill: transparent;
+                      cursor: pointer;
+                      transition: fill 0.2s;
+                    }
+                    svg a:focus,
+                    svg a:hover {
+                      outline: none;
+                    }
+                    svg a:focus path,
+                    svg a:hover path {
+                      fill: rgba(216, 209, 94, 0.5);
+                      cursor: pointer;
+                    }
+                  </style>
+                </defs>
+                <g>
+                  <a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-tray-set-of-3?c=0%7CSO1000">
+                    <title>Circle Woven Mirror Tray Set</title>
+                    <path d="M106 530c18 31 33 44 67 61a264 264 0 0 0 235-17c27-15 41-34 49-44 8-9 16-36 18-64s1-82-1-97-18-38-31-51-35-26-60-35-71-17-71-17l45-1c10-2 43-5 66-16 24-11 42-25 53-36s19-31 19-41l1-61c1-22-7-35-17-48s-33-27-46-33-38-13-60-15c-23-3-45-3-45-3-27 0-54 5-86 12-33 7-61 26-79 39-19 12-17 41-16 52 1 12 5 56 8 74 2 17 22 42 57 59 35 16 81 18 81 18l-38 2-20 4c-19 3-48 11-79 25s-57 40-68 57c-10 17-12 48-10 73 3 24 11 71 28 103zm391 294c-2-26-17-64-31-86-14-23-33-45-59-61s-77-41-130-42c-39-1-64 7-92 15-27 7-74 29-98 59s-51 71-53 121 6 70 6 70h450l4-14c1-7 4-35 3-62z" />
+                  </a>
+                </g>
+              </svg>
+            </div>
+            <div class="sop-content" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <p>Natural forms, designs, and textures are infused into each element of the collection, bringing comfort and beauty to the classroom—the keystones of heart-centered environments. Calm and balanced, the collection provides children with a place to form meaningful connections and engage in profound communications with others. </p>
             </div>
           </div>
 
           <div class="sop-row sop-lkbk-grp sop-sec-5">
-            <div class="sop-content sop-imgmap sop-carpet">
+            <div class="sop-content sop-imgmap sop-carpet" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 825">
               	<defs>
               		<style>
@@ -539,16 +554,16 @@
                 </g>
               </svg>
             </div>
-            <div class="sop-content sop-ml-desk">
+            <div class="sop-content sop-ml-desk" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <p>Used throughout the collection, multi-layer textures and authentic materials invite children to touch, interact, and explore. A wealth of sensory-based opportunities await young learners through the collection’s natural elements and woven fabrics, providing both visual and kinesthetic textures for sensory experiences.</p>
             </div>
           </div>
 
           <div class="sop-row sop-section sop-sec-6">
-            <div class="sop-content">
+            <div class="sop-content" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <div class="sop-image sop-quoteimage"></div>
             </div>
-            <div class="sop-content">
+            <div class="sop-content" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <blockquote class="sop-quote sop-dunmarhau">
                 <p>The classroom is powerful. Its space has the capacity to regulate children’s behaviors either positively or negatively… The types of materials in the classroom, including the furniture, and the way they are arranged influence how children act, react, learn and grow.</p>
                 <footer><cite>Sandra Duncan, EdD, Jody Martin and Sally Haughey, <br /><i>Through a Child’s Eyes</i></cite>
@@ -557,7 +572,7 @@
             </div>
           </div>
 
-          <div class="sop-row sop-section sop-sec-7">
+          <div class="sop-row sop-section sop-sec-7" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
             <div class="sop-content sop-imgmap sop-kitchen">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 727">
                 <defs>
@@ -640,7 +655,7 @@
           </div>
 
           <div class="sop-row sop-row-reverse sop-lkbk-grp sop-sec-8">
-            <div class="sop-content sop-ml-desk">
+            <div class="sop-content sop-ml-desk" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <blockquote class="sop-quote sop-rechkemmer">
                 <p>Immediately feels like the classroom is an extension of the home, where everyone would feel comfortable and welcome.</p>
                 <footer>
@@ -648,7 +663,7 @@
                 </footer>
               </blockquote>
             </div>
-            <div class="sop-content sop-imgmap sop-24instorage">
+            <div class="sop-content sop-imgmap sop-24instorage" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 358">
               	<defs>
               		<style>
@@ -688,19 +703,19 @@
           </div>
 
           <div class="sop-row sop-lkbk-grp sop-sec-9">
-            <div class="sop-content">
+            <div class="sop-content" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <p>Throughout the collection’s design process, it was important for furnishings to be authentic. Examples of this intentional design can be seen in the details of the kitchen’s farmhouse sink and contemporary metal faucet. Inspired by the home, solid wood accents, handcrafted furniture, and materials such as woven seagrass baskets invite children to experience natural authenticity through comfort and engaging connections. </p>
             </div>
-            <div class="sop-content sop-image">
+            <div class="sop-content sop-image" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <div class="sop-lifestyle-kitchen"></div>
             </div>
           </div>
 
           <div class="sop-row sop-lkbk-grp sop-sec-10">
-            <div class="sop-content sop-image">
+            <div class="sop-content sop-image" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <div class="sop-lifestyle-ovaltable"></div>
             </div>
-            <div class="sop-content">
+            <div class="sop-content" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
               <blockquote class="sop-quote sop-devdunharrodros">
                 <p>Children experience, learn, and test ideas in spaces that reflect everyday encounters.</p>
                 <footer>
@@ -710,7 +725,7 @@
             </div>
           </div>
 
-          <div class="sop-row sop-sec-11">
+          <div class="sop-row sop-sec-11" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
             <div class="sop-content sop-imgmap sop-dining">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 532">
                 <defs>
@@ -801,26 +816,634 @@
       </div>
       <!-- /Body -->
 
-      <!-- About Sandra
-      <div class="row sop-section">
+      <!-- I&I -->
+      <div class="row sop-section" id="II">
         <div class="col-sm-12">
-          <div class="sop-bio">
-            <div class="sop-bio-wrapper">
-              <div class="sop-row sop-content sop-bio-header">
-                <img src="images/Sandra_Duncan_Headshot_mobile.png" alt="Sandra Duncan" class="sop-content sop-bio-img sop-mobile-img">
-                <h3 class="sop-content">About Sandra Duncan</h3>
+          <div class="sop-blog">
+            <div class="sop-header sop-content">
+              <h3>Insights and Inspirations</h3>
+              <p>from Sandra Duncan</p>
+            </div>
+            <div class="sop-row sop-blog-list sop-left-indent">
+              <div class="sop-content sop-blog-teaser">
+                <div class="sop-blog-img">
+                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
+                </div>
+                <div class="sop-blog-intro">
+                  <h4>Title of Article</h4>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                </div>
+                <div class="sop-blog-readmore">
+                  <a href="#">Read More</a>
+                </div>
               </div>
-              <div class="sop-content sop-bio-body">
-                <p>With over 45 years of experience and a doctorate in education, Dr. Sandra Duncan has a wide and varied background in early care and education. She has extensive experience in working with young children and parents, teaching at the university level, designing professional development programs for practitioners, and authoring several teacher resource books. Now, Dr. Duncan is bringing her years of theory and best practices to the early childhood classroom in the form of the Sense of Place furniture collection - an exclusive to the Kaplan portolfio of furniture offerings. With its modern aesthetics, many authentic and true-to-real-life details, and considerations for what the youngest of children need to thrive best in their first learning environments, the Sense of Place collection provides ECE educators a beautiful backdrop to creating the most meaningful and lasting of learning experiences for years to come.</p>
+              <div class="sop-content sop-blog-teaser">
+                <div class="sop-blog-img">
+                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
+                </div>
+                <div class="sop-blog-intro">
+                  <h4>Title of Article</h4>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="sop-blog-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+              <div class="sop-content sop-blog-teaser">
+                <div class="sop-blog-img">
+                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
+                </div>
+                <div class="sop-blog-intro">
+                  <h4>Title of Article Title of Article Title of Article</h4>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                </div>
+                <div class="sop-blog-readmore">
+                  <a href="#">Read More</a>
+                </div>
               </div>
             </div>
-            <img src="images/Sandra_Duncan_Headshot.png" alt="Sandra Duncan" class="sop-content sop-bio-img sop-desktop-img">
           </div>
         </div>
       </div>
-      /About Sandra -->
+      <!-- /I&I -->
 
-      <div class="row sop-section">
+      <!-- Shop -->
+      <div class="row sop-section" id="collection">
+        <div class="col-sm-12">
+          <div class="sop-shop">
+            <div class="sop-header sop-content">
+              <h3>Shop the Collection</h3>
+              <p>Furniture and Accessories</p>
+            </div>
+            <div class="sop-row sop-shop-list sop-left-indent">
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31673.jpg" alt="Sense of Place Curio Storage" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Curio Storage
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31673
+                  </div>
+                  <div class="sop-product-price">
+                    $474.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31673/sense-of-place-curio-storage?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31698.jpg" alt="Sense of Place Range and Sink" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Range and Sink
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31698
+                  </div>
+                  <div class="sop-product-price">
+                    $475.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31698/sense-of-place-range-and-sink?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31703.jpg" alt="Sense of Place Refrigerator" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Refrigerator
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31703
+                  </div>
+                  <div class="sop-product-price">
+                    $299.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31703/sense-of-place-refrigerator?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31704_r_19.jpg" alt="Sense of Place Kitchen Island" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Kitchen Island
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31704
+                  </div>
+                  <div class="sop-product-price">
+                    $524.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31704/sense-of-place-kitchen-island?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31757.jpg" alt="Sense of Place 42&quot; Oval Table" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      42" Oval Table
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31757
+                  </div>
+                  <div class="sop-product-price">
+                    $319.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31757/sense-of-place-42-inch-oval-table?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31692.jpg" alt="Sense of Place Armoire" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Armoire
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31692
+                  </div>
+                  <div class="sop-product-price">
+                    $445.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31692/sense-of-place-armoire?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/productpopup/33139_r.jpg" alt="Sense of Place Tan Vinyl Couch" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Tan Vinyl Couch
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33139
+                  </div>
+                  <div class="sop-product-price">
+                    $299.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33139/sense-of-place-tan-vinyl-couch?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/productpopup/33140_r.jpg" alt="Sense of Place Tan Vinyl Chair" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Tan Vinyl Chair
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33140
+                  </div>
+                  <div class="sop-product-price">
+                    $209.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33139/sense-of-place-tan-vinyl-couch?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33066.jpg" alt="Sense of Place Farmhouse Table and Benches" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Farmhouse Table and Benches
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33066
+                  </div>
+                  <div class="sop-product-price">
+                    $782.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33066P/sense-of-place-farmhouse-table-and-benches?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31680.jpg" alt="Sense of Place Fireplace" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Fireplace
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31680
+                  </div>
+                  <div class="sop-product-price">
+                    $549.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31680/sense-of-place-fireplace?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/32844.jpg" alt="Sense of Place Kitchen Island Stools - Set of 2" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Kitchen Island Stools - Set of 2
+                  </div>
+                  <div class="sop-product-number">
+                      Item 32844
+                  </div>
+                  <div class="sop-product-price">
+                    $179.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/32844/sense-of-place-kitchen-island-stools-set-of-2?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31672.jpg" alt="Sense of Place30&quot; Compartment Storage" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      30" Compartment Storage
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31672
+                  </div>
+                  <div class="sop-product-price">
+                    $345.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31672/sense-of-place-30-inch-compartment-storage?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                    <img src="https://images.kaplanco.com/catalog/largepopup/32845.jpg" alt="Sense of Place 24&quot; Compartment Storage" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      24" Compartment Storage
+                  </div>
+                  <div class="sop-product-number">
+                      Item 32845
+                  </div>
+                  <div class="sop-product-price">
+                    $309.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/32845/sense-of-place-24-inch-compartment-storage?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31875.jpg" alt="Sense of Place Rectangular Storage Baskets - Set of 3" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Rectangular Storage Baskets - Set of 3
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31875
+                  </div>
+                  <div class="sop-product-price">
+                    $99.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31875/sense-of-place-rectangular-storage-baskets-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                    <img src="https://images.kaplanco.com/catalog/largepopup/31868.jpg" alt="Sense of Place Circle Acrylic Mirror" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Circle Acrylic Mirror
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31868
+                  </div>
+                  <div class="sop-product-price">
+                    $159.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31868/sense-of-place-circle-acrylic-mirror?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31882.jpg" alt="Sense of Place Circle Woven Mirror Trays - Set of 3" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Circle Woven Mirror Trays - Set of 3
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31882
+                  </div>
+                  <div class="sop-product-price">
+                    $119.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-trays-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/31708.jpg" alt="Sense of Place Woven Baskets - Set of 3" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Woven Baskets - Set of 3
+                  </div>
+                  <div class="sop-product-number">
+                      Item 31708
+                  </div>
+                  <div class="sop-product-price">
+                    $109.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/31708/sense-of-place-woven-baskets-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33167.jpg" alt="Sense of Place Nature's Stripe Blue Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Nature&rsquo;s Stripe Blue Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33167
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33167P/sense-of-place-natures-stripe-carpets-6-x-9" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33171.jpg" alt="Sense of Place Nature's Stripe Blue Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Nature&rsquo;s Stripe Green Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33171
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33167P/sense-of-place-natures-stripe-carpets-6-x-9" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33168.jpg" alt="Sense of Place Blue Leaf Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Blue Leaf Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33168
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33168/sense-of-place-blue-leaf-carpet-6-x-9?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33172.jpg" alt="Sense of Place Green Leaf Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Green Leaf Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33172
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33172/sense-of-place-green-leaf-carpet-6-x-9?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33170.jpg" alt="Sense of Place Highland Stripe Oval Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Highland Stripe Oval Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33170
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33170/sense-of-place-highland-stripe-blue-oval-carpet-6-x-9-inch?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33176.jpg" alt="Sense of Place Lowland Stripe Oval Carpet - 6&apos; X 9&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Lowland Stripe Oval Carpet - 6' X 9'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33176
+                  </div>
+                  <div class="sop-product-price">
+                    $295.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33176/sense-of-place-highland-stripe-green-oval-carpet-6-x-9-inch?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33169.jpg" alt="Sense of Place Blue Carpet Runner - 2&apos; X 8&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Blue Carpet Runner - 2' X 8'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33176
+                  </div>
+                  <div class="sop-product-price">
+                    $95.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33169/sense-of-place-carpet-runner-blue-2-x-8?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/33173.jpg" alt="Sense of Place Green Carpet Runner - 2&apos; X 8&apos;" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Green Carpet Runner - 2' X 8'
+                  </div>
+                  <div class="sop-product-number">
+                      Item 33173
+                  </div>
+                  <div class="sop-product-price">
+                    $95.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/33173/sense-of-place-carpet-runner-green-2-x-8?c=26%7CCR1035" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/92826_r_19.jpg" alt="Through a Child's Eyes - Paperback" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Through a Child's Eyes - Paperback
+                  </div>
+                  <div class="sop-product-number">
+                      Item 92826
+                  </div>
+                  <div class="sop-product-price">
+                    $34.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/92826/through-a-childs-eyes-paperback?c=16%7CTR1005" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/18893.jpg" alt="Inspiring Spaces for Young Children" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                      Inspiring Spaces for Young Children
+                  </div>
+                  <div class="sop-product-number">
+                      Item 18893
+                  </div>
+                  <div class="sop-product-price">
+                    $34.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/18893/inspiring-spaces-for-young-children?c=16%7CTR1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="sop-content sop-item">
+                <div class="sop-shop-img">
+                  <img src="https://images.kaplanco.com/catalog/largepopup/81334.jpg" alt="Rethinking the Classroom Landscape - Paperback" class="sop-product-image">
+                </div>
+                <div class="sop-shop-info">
+                  <div class="sop-product-name">
+                    Rethinking the Classroom Landscape - Paperback
+                  </div>
+                  <div class="sop-product-number">
+                      Item 81334
+                  </div>
+                  <div class="sop-product-price">
+                    $34.95
+                  </div>
+                </div>
+                <div class="sop-product-link">
+                  <a href="https://www.kaplanco.com/product/81334/rethinking-the-classroom-landscape-paperback?c=16%7CTR1000" class= "button button-sop">Shop Now</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Shop -->
+
+      <!-- About Sandra -->
+      <div class="row sop-section" id="sandra">
         <div class="col-sm-12">
           <div class="sop-bio">
             <div class="sop-bio-wrapper">
@@ -838,491 +1461,7 @@
           </div>
         </div>
       </div>
-
-      <!-- I&I -->
-      <div class="row sop-section">
-        <div class="col-sm-12">
-          <div class="sop-blog">
-            <div class="sop-header sop-content">
-              <h3>Insights and Inspirations</h3>
-              <p>from Sandra Duncan</p>
-            </div>
-            <div class="sop-row sop-blog-list sop-left-indent">
-                <div class="sop-content sop-blog-teaser">
-                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
-                  <h4>Title of Article</h4>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                  <div class="sop-blog-readmore">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-                <div class="sop-content sop-blog-teaser">
-                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
-                  <h4>Title of Article</h4>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                  <div class="sop-blog-readmore">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-                <div class="sop-content sop-blog-teaser">
-                  <img src="https://via.placeholder.com/334x251" alt="Title of Article">
-                  <h4>Title of Article</h4>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                  <div class="sop-blog-readmore">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /I&I -->
-
-      <!-- Shop -->
-      <div class="row sop-section">
-        <div class="col-sm-12">
-          <div class="sop-shop">
-            <div class="sop-header sop-content">
-              <h3>Shop the Collection</h3>
-              <p>Furniture and Accessories</p>
-            </div>
-            <div class="sop-row sop-shop-list sop-left-indent">
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31673.jpg" alt="Sense of Place Curio Storage" class="sop-product-image">
-                <div class="sop-product-name">
-                    Curio Storage
-                </div>
-                <div class="sop-product-number">
-                    Item 31673
-                </div>
-                <div class="sop-product-price">
-                  $474.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31673/sense-of-place-curio-storage?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31698.jpg" alt="Sense of Place Range and Sink" class="sop-product-image">
-                <div class="sop-product-name">
-                    Range and Sink
-                </div>
-                <div class="sop-product-number">
-                    Item 31698
-                </div>
-                <div class="sop-product-price">
-                  $475.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31698/sense-of-place-range-and-sink?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31703.jpg" alt="Sense of Place Refrigerator" class="sop-product-image">
-                <div class="sop-product-name">
-                    Refrigerator
-                </div>
-                <div class="sop-product-number">
-                    Item 31703
-                </div>
-                <div class="sop-product-price">
-                  $299.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31703/sense-of-place-refrigerator?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31757.jpg" alt="Sense of Place 42&quot; Oval Table" class="sop-product-image">
-                <div class="sop-product-name">
-                    42" Oval Table
-                </div>
-                <div class="sop-product-number">
-                    Item 31757
-                </div>
-                <div class="sop-product-price">
-                  $319.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31757/sense-of-place-42-inch-oval-table?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31692.jpg" alt="Sense of Place Armoire" class="sop-product-image">
-                <div class="sop-product-name">
-                    Armoire
-                </div>
-                <div class="sop-product-number">
-                    Item 31692
-                </div>
-                <div class="sop-product-price">
-                  $445.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31692/sense-of-place-armoire?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/productpopup/33139_r.jpg" alt="Sense of Place Tan Vinyl Couch" class="sop-product-image">
-                <div class="sop-product-name">
-                    Tan Vinyl Couch
-                </div>
-                <div class="sop-product-number">
-                    Item 33139
-                </div>
-                <div class="sop-product-price">
-                  $299.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33139/sense-of-place-tan-vinyl-couch?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/productpopup/33140_r.jpg" alt="Sense of Place Tan Vinyl Chair" class="sop-product-image">
-                <div class="sop-product-name">
-                    Tan Vinyl Chair
-                </div>
-                <div class="sop-product-number">
-                    Item 33140
-                </div>
-                <div class="sop-product-price">
-                  $209.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33139/sense-of-place-tan-vinyl-couch?c=1%7CSO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33066.jpg" alt="Sense of Place Farmhouse Table and Benches" class="sop-product-image">
-                <div class="sop-product-name">
-                    Farmhouse Table and Benches
-                </div>
-                <div class="sop-product-number">
-                    Item 33066
-                </div>
-                <div class="sop-product-price">
-                  $782.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33066P/sense-of-place-farmhouse-table-and-benches?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31680.jpg" alt="Sense of Place Fireplace" class="sop-product-image">
-                <div class="sop-product-name">
-                    Fireplace
-                </div>
-                <div class="sop-product-number">
-                    Item 31680
-                </div>
-                <div class="sop-product-price">
-                  $549.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31680/sense-of-place-fireplace?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/32844.jpg" alt="Sense of Place Kitchen Island Stools - Set of 2" class="sop-product-image">
-                <div class="sop-product-name">
-                    Kitchen Island Stools - Set of 2
-                </div>
-                <div class="sop-product-number">
-                    Item 32844
-                </div>
-                <div class="sop-product-price">
-                  $179.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/32844/sense-of-place-kitchen-island-stools-set-of-2?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31672.jpg" alt="Sense of Place30&quot; Compartment Storage" class="sop-product-image">
-                <div class="sop-product-name">
-                    30" Compartment Storage
-                </div>
-                <div class="sop-product-number">
-                    Item 31672
-                </div>
-                <div class="sop-product-price">
-                  $345.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31672/sense-of-place-30-inch-compartment-storage?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/32845.jpg" alt="Sense of Place 24&quot; Compartment Storage" class="sop-product-image">
-                <div class="sop-product-name">
-                    24" Compartment Storage
-                </div>
-                <div class="sop-product-number">
-                    Item 32845
-                </div>
-                <div class="sop-product-price">
-                  $309.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/32845/sense-of-place-24-inch-compartment-storage?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31875.jpg" alt="Sense of Place Rectangular Storage Baskets - Set of 3" class="sop-product-image">
-                <div class="sop-product-name">
-                    Rectangular Storage Baskets - Set of 3
-                </div>
-                <div class="sop-product-number">
-                    Item 31875
-                </div>
-                <div class="sop-product-price">
-                  $99.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31875/sense-of-place-rectangular-storage-baskets-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31868.jpg" alt="Sense of Place Circle Acrylic Mirror" class="sop-product-image">
-                <div class="sop-product-name">
-                    Circle Acrylic Mirror
-                </div>
-                <div class="sop-product-number">
-                    Item 31868
-                </div>
-                <div class="sop-product-price">
-                  $159.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31868/sense-of-place-circle-acrylic-mirror?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31882.jpg" alt="Sense of Place Circle Woven Mirror Trays - Set of 3" class="sop-product-image">
-                <div class="sop-product-name">
-                    Circle Woven Mirror Trays - Set of 3
-                </div>
-                <div class="sop-product-number">
-                    Item 31882
-                </div>
-                <div class="sop-product-price">
-                  $119.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-trays-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/31708.jpg" alt="Sense of Place Woven Baskets - Set of 3" class="sop-product-image">
-                <div class="sop-product-name">
-                    Woven Baskets - Set of 3
-                </div>
-                <div class="sop-product-number">
-                    Item 31708
-                </div>
-                <div class="sop-product-price">
-                  $109.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/31708/sense-of-place-woven-baskets-set-of-3?c=1|SO1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33167.jpg" alt="Sense of Place Nature's Stripe Blue Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Nature&rsquo;s Stripe Blue Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33167
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33167P/sense-of-place-natures-stripe-carpets-6-x-9" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33171.jpg" alt="Sense of Place Nature's Stripe Blue Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Nature&rsquo;s Stripe Green Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33171
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33167P/sense-of-place-natures-stripe-carpets-6-x-9" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33168.jpg" alt="Sense of Place Blue Leaf Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Blue Leaf Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33168
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33168P/sense-of-place-leaf-carpet-6-x-9" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33168.jpg" alt="Sense of Place Green Leaf Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Green Leaf Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33172
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33168P/sense-of-place-leaf-carpet-6-x-9" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://www.kaplanco.com/product/33170P/sense-of-place-highland-stripe-oval-carpet-6-x-9-inch" alt="Sense of Place Blue Highland Stripe Oval Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Blue Highland Stripe Oval Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33170
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33170P/sense-of-place-highland-stripe-oval-carpet-6-x-9-inch" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33176.jpg" alt="Sense of Place Green Highland Stripe Oval Carpet - 6&apos; X 9&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Green Highland Stripe Oval Carpet - 6' X 9'
-                </div>
-                <div class="sop-product-number">
-                    Item 33176
-                </div>
-                <div class="sop-product-price">
-                  $295.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33170P/sense-of-place-highland-stripe-oval-carpet-6-x-9-inch" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33169.jpg" alt="Sense of Place Blue Carpet Runner - 2&apos; X 8&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Blue Carpet Runner - 2' X 8'
-                </div>
-                <div class="sop-product-number">
-                    Item 33176
-                </div>
-                <div class="sop-product-price">
-                  $95.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33173P/sense-of-place-carpet-runner-2-x-8" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/33173.jpg" alt="Sense of Place Green Carpet Runner - 2&apos; X 8&apos;" class="sop-product-image">
-                <div class="sop-product-name">
-                    Blue Carpet Runner - 2' X 8'
-                </div>
-                <div class="sop-product-number">
-                    Item 33173
-                </div>
-                <div class="sop-product-price">
-                  $95.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/33173P/sense-of-place-carpet-runner-2-x-8" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/92826_r_19.jpg" alt="Through a Child's Eyes - Paperback" class="sop-product-image">
-                <div class="sop-product-name">
-                    Through a Child's Eyes - Paperback
-                </div>
-                <div class="sop-product-number">
-                    Item 92826
-                </div>
-                <div class="sop-product-price">
-                  $34.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/92826/through-a-childs-eyes-paperback?c=16%7CTR1005" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/18893.jpg" alt="Inspiring Spaces for Young Children" class="sop-product-image">
-                <div class="sop-product-name">
-                    Inspiring Spaces for Young Children
-                </div>
-                <div class="sop-product-number">
-                    Item 18893
-                </div>
-                <div class="sop-product-price">
-                  $34.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/18893/inspiring-spaces-for-young-children?c=16%7CTR1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="sop-content sop-item">
-                <img src="https://images.kaplanco.com/catalog/largepopup/81334.jpg" alt="Rethinking the Classroom Landscape - Paperback" class="sop-product-image">
-                <div class="sop-product-name">
-                  Rethinking the Classroom Landscape - Paperback
-                </div>
-                <div class="sop-product-number">
-                    Item 81334
-                </div>
-                <div class="sop-product-price">
-                  $34.95
-                </div>
-                <div class="sop-product-link">
-                  <a href="https://www.kaplanco.com/product/81334/rethinking-the-classroom-landscape-paperback?c=16%7CTR1000" class= "button button-sop">Shop Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /Shop -->
+      <!-- /About Sandra -->
 
     </div>
   </div>
@@ -1442,6 +1581,9 @@
   <script type="text/javascript" src="https://images.kaplanco.com/javascript/javascript85d.js?accountId=1&amp;siteId=1&amp;queueId=2&amp;m=1&amp;i=1&amp;theme=link&amp;popout=true" integrity="sha384-ebTEIwramehoL5m2nnD+bSY3IGOX7h0g3pmj/dDI9T3qASiOpuvBhawJViWzMG6C"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script>
+  AOS.init();
+</script>
   <script type="text/javascript">
     /* <![CDATA[ */
     var bStopSubmit = true;
