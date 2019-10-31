@@ -367,11 +367,16 @@
   }
 
   @media (min-width: 1401px) {
+    background-position: center -125px;
     height: 700px;
 
     .sop-logo-whitebox {
       width: 40%;
     }
+  }
+
+  @media (min-width: 1701px) {
+    background-position: center -175px;
   }
 }
 
@@ -421,6 +426,16 @@
       li {
         color: $white;
         line-height: 2em;
+
+        & > a {
+          color: $white;
+          text-decoration: none;
+
+          &:hover,
+          &:active {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
@@ -478,9 +493,13 @@
   @media (min-width: 671px) {
     flex-flow: row nowrap;
     align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
 
     .sop-content {
       width: 50%;
+      padding-left: 16px;
+      padding-right: 16px;
 
       p {
         margin-top: 0;
@@ -499,9 +518,10 @@
 }
 
 .sop-sec-2 {
+  margin-top: 96px;
 
   .sop-fireplace {
-    margin-top: 128px;
+    margin-top: 0px;
   }
 
   .sop-walling {
@@ -522,14 +542,27 @@
     .sop-fireplace {
       margin-top: 0;
     }
+  }
+
+  @media (min-width: 851px) {
+    margin-top: 80px;
 
     .sop-walling {
-      top: initial;
-      left: initial;
-      bottom: -32px;
-      right: 32px;
-      width: 50%;
       padding-left: 48px;
+      top: -48px;
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    margin-top: 112px;
+
+    .sop-walling {
+      width: 50%;
+
+      blockquote {
+        margin-right: 32px;
+      }
     }
   }
 }
@@ -538,33 +571,166 @@
 
   @media (min-width: 671px) {
     align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
     margin-top: -64px;
 
-    .sop-content p {
-      margin-left: 22px;
-      margin-top: 96px;
+    .sop-content {
+      padding-left: 16px;
+      padding-right: 16px;
+
+      p {
+        margin-left: -10px;
+        margin-top: 64px;
+      }
     }
-  }
-}
-
-.sop-sec-4 {
-
-  @media (min-width: 671px) {
-    align-items: center;
 
     .sop-curio {
       margin-left: 32px;
     }
   }
+
+  @media (min-width: 851px) {
+    margin-top: -96px;
+  }
+
+  @media (min-width: 1101px) {
+
+    .sop-content p {
+      margin-top: 48px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -192px;
+
+    .sop-content {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      p {
+        margin-top: 112px;
+      }
+    }
+  }
+}
+
+.sop-sec-4 {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: 32px;
+
+  .sop-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex: 0 0 50%;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 561px) {
+    margin-top: -64px;
+
+    .sop-content p {
+      margin-top: 64px;
+      margin-left: -10px;
+    }
+
+    .sop-baskets {
+      padding-left: 32px;
+    }
+  }
+
+  @media (min-width: 671px) {
+    flex-direction: row-reverse;
+    margin-top: 32px;
+
+    .sop-content {
+      padding-right: 16px;
+      padding-left: 16px;
+
+      p {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (min-width: 851px) {
+    margin-top: -32px;
+  }
+
+  @media (min-width: 1101px) {
+    margin-top: -96px;
+  }
+
+  @media (min-width: 1401px) {
+    margin-right: -32px;
+    margin-left: -32px;
+
+    .sop-content {
+      padding-right: 32px;
+      padding-left: 32px;
+
+      p {
+        margin-top: -256px;
+      }
+    }
+  }
 }
 
 .sop-sec-5 {
+  margin-top: 32px;
 
   @media (min-width: 671px) {
     align-items: center;
+    margin-right: -16px;
+    margin-left: -16px;
+
+    .sop-content {
+      padding-right: 16px;
+      padding-left: 16px;
+
+      p {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  @media (min-width: 851px) {
+    margin-top: -54px;
 
     .sop-content p {
       margin-left: 32px;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    margin-top: -84px;
+
+    .sop-content p {
+      margin-top: 64px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -380px;
+    margin-right: -32px;
+    margin-left: -32px;
+
+    .sop-content {
+      padding-right: 32px;
+      padding-left: 32px;
+
+      p {
+        margin-top: 354px;
+      }
     }
   }
 }
@@ -587,9 +753,13 @@
       max-width: 80%;
     }
 
+    @media (min-width: 851px) {
+      margin-top: -48px;
+    }
+
     @media (min-width: 1401px) {
       margin-top: -64px;
-      max-width: 85%;
+      max-width: 75%;
     }
   }
 }
@@ -626,6 +796,24 @@
       margin-top: 32px;
     }
   }
+
+  @media (min-width: 1101px) {
+    margin-top: -96px;
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: -128px;
+
+    .sop-24instorage {
+      padding-left: 32px;
+      padding-right: 22px;
+    }
+
+    .sop-rechkemmer {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
 }
 
 .sop-sec-9 {
@@ -643,6 +831,37 @@
 
     p {
       margin: 0;
+    }
+  }
+
+  @media (min-width: 851px) {
+    margin-top: -48px;
+
+    .sop-content p {
+      margin-top: -64px;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    margin-top: -112px;
+
+    .sop-content p {
+      margin-top: -96px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-top: -196px;
+
+    .sop-content {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      p {
+        margin-top: -148px;
+      }
     }
   }
 }
@@ -664,10 +883,46 @@
   .sop-devdunharrodros {
     margin: 0 0 0 -64px;
   }
+
+  @media (min-width: 851px) {
+    margin-top: -96px;
+
+    .sop-devdunharrodros {
+      margin-top: 96px;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    margin-top: -192px;
+
+    .sop-devdunharrodros {
+      margin-top: 128px;
+    }
+  }
+
+  @media (min-width: 1401px) {
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-top: -330px;
+
+    .sop-content {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      .sop-devdunharrodros {
+        margin-left: -128px;
+        margin-right: 64px;
+      }
+    }
+  }
 }
 
 .sop-sec-11 {
   margin-top: 32px;
+
+  @media (min-width: 671px) {
+    display: block;
+  }
 }
 
 .sop-content {
@@ -700,17 +955,9 @@
       margin: 0;
     }
   }
-
-  @media (min-width: 671px) {
-
-    &.sop-fireplace {
-      width: 100%;
-    }
-  }
 }
 
 .sop-baskets {
-  margin-top: 32px;
 
   @media (min-width: 671px) {
     padding-left: 32px;
@@ -961,16 +1208,31 @@
   }
 
   @media (min-width: 671px) {
+    align-items: stretch;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-right: -16px;
 
 
     .sop-blog-teaser {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
       padding-bottom: 0;
       padding-right: 16px;
       padding-left: 16px;
       flex: 0 0 50%;
+
+      .sop-blog-intro {
+        flex-grow: 1;
+      }
+
+      .sop-blog-img,
+      .sop-blog-intro,
+      .sop-blog-readmore {
+        flex-shrink: 0;
+      }
 
       @media (min-width: 901px) {
         flex: 0 0 33.3333%;
@@ -1056,16 +1318,31 @@
   }
 
   @media (min-width: 671px) {
+    align-items: stretch;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-right: -16px;
 
 
     .sop-item {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
       padding-bottom: 0;
       padding-left: 16px;
       padding-right: 16px;
       flex: 0 0 50%;
+
+      .sop-shop-info {
+        flex-grow: 1;
+      }
+
+      .sop-shop-img,
+      .sop-shop-intro,
+      .sop-product-link {
+        flex-shrink: 0;
+      }
 
       @media (min-width: 901px) {
         flex: 0 0 33.3333%;
