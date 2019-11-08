@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     // Concatenation
     concat: {
       dist: {
-        src: 'src/js/theme.js',
+        src: 'src/js/*.js',
         dest: 'src/js/scripts.js'
       }
     },
@@ -103,8 +103,8 @@ module.exports = function(grunt) {
         }
       },
       scripts: {
-        files: ['src/js/*.js'],
-        tasks: 'concat',
+        files: ['**/*.js'],
+        tasks: ['concat', 'uglify'],
         options: {
           spawn: false
         }
