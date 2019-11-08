@@ -390,6 +390,12 @@
   position: relative;
   text-align: center;
 
+  img {
+    max-width: 480px;
+    width: 90%;
+    margin: 16px 0;
+  }
+
   &:before {
     background-color: rgba($sop-green, .7);
     content: '';
@@ -402,13 +408,24 @@
   }
 
   .sop-kapl-exclusive {
-    margin-bottom: 16px;
-    padding: 16px 16px 0 0;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
 
-    img {
-      max-width: 480px;
-      width: 90%;
+    .sop-cta {
+      padding: 6px 14px;
+      border: 1px solid $white;
+      font-size: 1.2em;
+      font-weight: normal;
+      text-decoration: none;
+      transition: color .2s, background-color .2s;
+
+      &:hover,
+      &:focus {
+        background-color: $white;
+        color: $sop-green;
+      }
     }
   }
 
@@ -441,14 +458,23 @@
   }
 
   @media (min-width: 671px) {
-    text-align: left;
+
+    img {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      max-width: 480px;
+      width: 40%;
+      margin: 0;
+    }
 
     .sop-kapl-exclusive {
-      text-align: right;
+      justify-content: flex-start;
 
-      img {
-        max-width: 480px;
-        width: 50%;
+      .sop-cta {
+        padding: 9px 17px;
+        border: 2px solid $white;
+        font-size: 1.3em;
       }
     }
 
@@ -467,12 +493,18 @@
   }
 
   @media (min-width: 901px) {
-    text-align: left;
+
+    img {
+      right: 32px;
+      width: 40%;
+    }
 
     .sop-kapl-exclusive {
 
-      img {
-        width: 40%;
+      .sop-cta {
+        padding: 8px 16px;
+        border: 2px solid $white;
+        font-size: 1.5em;
       }
     }
   }
@@ -487,6 +519,82 @@
 }
 
 // Body
+
+.svg-item {
+
+  path {
+    fill: rgba(216, 209, 94, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
+.svg-label {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+svg {
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+
+  .svg-item {
+
+    &:focus,
+    &:hover {
+
+      path {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      & + .svg-label {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.svg-label-fill {
+  fill:#7C8A4F;
+  stroke:#FFFFFF;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.svg-label-stroke {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.svg-text-base {
+  fill: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.svg-text-bold {
+  font-weight: 700;
+}
+
+.svg-text-title {
+  font-size: 26px;
+}
+
+.svg-text-price {
+  font-size: 22px;
+}
 
 .sop-sec-1 {
 
@@ -573,7 +681,6 @@
     align-items: center;
     margin-left: -16px;
     margin-right: -16px;
-    margin-top: -64px;
 
     .sop-content {
       padding-left: 16px;
@@ -581,36 +688,46 @@
 
       p {
         margin-left: -10px;
-        margin-top: 64px;
       }
     }
 
     .sop-curio {
       margin-left: 32px;
+      margin-top: -64px;
     }
   }
 
   @media (min-width: 851px) {
-    margin-top: -96px;
+
+    .sop-content p {
+      margin-top: -32px;
+    }
+
+    .sop-curio {
+      margin-top: -96px;
+    }
   }
 
   @media (min-width: 1101px) {
 
     .sop-content p {
-      margin-top: 48px;
+      margin-top: -96px;
     }
   }
 
   @media (min-width: 1401px) {
-    margin-top: -192px;
 
     .sop-content {
       padding-left: 32px;
       padding-right: 32px;
 
       p {
-        margin-top: 112px;
+        margin-top: -80px;
       }
+    }
+
+    .sop-curio {
+      margin-top: -224px;
     }
   }
 }
@@ -768,7 +885,9 @@
   align-items: flex-start;
   display: flex;
   flex-flow: row-reverse nowrap;
-  margin-top: -64px;
+  margin-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   .sop-content {
     flex: 0 0 50%;
@@ -776,42 +895,42 @@
 
   .sop-24instorage {
     margin: 0;
-    padding-left: 16px;
 
     @media (min-width: 671px) {
-      padding-left: 32px;
-      margin-top: 0;
+      margin-top: -74px;
+    }
+
+    @media (min-width: 1101px) {
+      margin-top: -96px;
     }
   }
 
   .sop-rechkemmer {
     max-width: 90%;
-    margin: 0 16px 0 16px;
-
-    @media (min-width: 671px) {
-
-    }
+    margin: -64px 0 0 16px;
+    max-width: 100%;
 
     @media (min-width: 851px) {
-      margin-top: 32px;
+      margin-top: -40px;
     }
-  }
 
-  @media (min-width: 1101px) {
-    margin-top: -96px;
+    @media (min-width: 1101px) {
+      margin-top: -64px;
+    }
   }
 
   @media (min-width: 1401px) {
-    margin-top: -128px;
+    padding-left: 32px;
+    padding-right: 32px;
 
     .sop-24instorage {
-      padding-left: 32px;
       padding-right: 22px;
+      margin-top: -136px;
     }
 
     .sop-rechkemmer {
       margin-left: 32px;
-      margin-right: 32px;
+      margin-top: -116px
     }
   }
 }
