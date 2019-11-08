@@ -1,35 +1,29 @@
-<svg version="1" id="Baskets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
-	<defs>
-		<style>
-      svg {
-        background-image: url(images/sop-baskets.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        max-width: 600px;
-        width: 90%;
-        border: 15px solid #FFFFFF;
-        border-radius: 25px;
-      }
-      path {
-        fill: transparent;
-        cursor: pointer;
-        transition: fill 0.2s;
-      }
-      svg a:focus,
-      svg a:hover {
-        outline: none;
-      }
-      svg a:focus path,
-      svg a:hover path {
-        fill: rgba(216, 209, 94, 0.5);
-        cursor: pointer;
-      }
-    </style>
-  </defs>
-	<g>
-		<a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-tray-set-of-3?c=0%7CSO1000">
-			<title>Circle Woven Mirror Tray Set</title>
-		  <path d="M106 530c18 31 33 44 67 61a264 264 0 0 0 235-17c27-15 41-34 49-44 8-9 16-36 18-64s1-82-1-97-18-38-31-51-35-26-60-35-71-17-71-17l45-1c10-2 43-5 66-16 24-11 42-25 53-36s19-31 19-41l1-61c1-22-7-35-17-48s-33-27-46-33-38-13-60-15c-23-3-45-3-45-3-27 0-54 5-86 12-33 7-61 26-79 39-19 12-17 41-16 52 1 12 5 56 8 74 2 17 22 42 57 59 35 16 81 18 81 18l-38 2-20 4c-19 3-48 11-79 25s-57 40-68 57c-10 17-12 48-10 73 3 24 11 71 28 103zm391 294c-2-26-17-64-31-86-14-23-33-45-59-61s-77-41-130-42c-39-1-64 7-92 15-27 7-74 29-98 59s-51 71-53 121 6 70 6 70h450l4-14c1-7 4-35 3-62z" />
-		</a>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+<style>
+	.sop-baskets svg {
+		background-image: url("images/sop-baskets.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		max-width: 700px;
+		width: 100%;
+		border: 0 solid #FFFFFF;
+		border-radius: 15px;
+	}
+</style>
+  <g id="MirrorBaskets" class="svg-item">
+		<a href="https://www.kaplanco.com/product/31882/sense-of-place-circle-woven-mirror-trays-set-of-3?c=1%7CSO1000&linkingParam=%7B%7D">
+    <path d="M107 530c18 31 33 44 67 61 76 32 163 25 235-17 27-15 41-34 49-44 8-9 16-36 18-64s1-82-1-97-18-38-31-51-35-26-60-35-71-17-71-17l45-1c10-2 43-5 66-16 24-11 42-25 53-36s19-31 19-41l1-61c1-22-7-35-17-48s-33-27-46-33-38-13-60-15c-23-3-45-3-45-3-27 0-54 5-86 12-33 7-61 26-79 39-19 12-17 41-16 52 1 12 5 56 8 74 2 17 22 42 57 59 35 16 81 18 81 18l-38 2-20 4c-19 3-48 11-79 25s-57 40-68 57c-10 17-12 48-10 73 3 24 11 71 28 103zm391 294c-2-26-17-64-31-86-14-23-33-45-59-61s-77-41-130-42c-39-1-64 7-92 15-27 7-74 29-98 59s-51 71-53 121 6 70 6 70h450l4-14c1-7 4-35 3-62z"/>
+	</a>
+  </g>
+  <g id="MirrorBasketsLabel" class="svg-label">
+    <g>
+      <path class="svg-label-fill" d="M285 169H54c-5 0-9-4-9-9V47c0-5 4-9 9-9h231c5 0 9 4 9 9v113c0 5-4 9-9 9z"/>
+      <text transform="translate(66 78)">
+        <tspan x="0" y="0"  class="svg-text-base svg-text-bold svg-text-title">Circle Woven </tspan><tspan x="0" y="31.2"  class="svg-text-base svg-text-bold svg-text-title">Mirror Trays</tspan>
+      </text>
+      <text transform="translate(66 145)" class="svg-text-base svg-text-price">
+        $109.95
+      </text>
+    </g>
+  </g>
 </svg>
